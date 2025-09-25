@@ -1,13 +1,13 @@
 trigger:
   branches:
     include:
-      - deployment-issue-fixes
+      - thrid
 
 pr:
   autoCancel: "true"
   branches:
     include:
-      - deployment-issue-fixes
+      - thrid
   paths:
     exclude:
       - README.md
@@ -33,6 +33,6 @@ stages:
           - bash: sfdx force:auth:jwt:grant --clientid 3MVG9hYFI5K4tx6SKL0ZqWRbUwPfnRckQsnUGyEiqI2auP_Mr7WrLPb6ojTrH9nP1P9CBZ8GW3NPJZMyQUHIm --jwtkeyfile ./bin/server.key --username gowthams@bossinitech.com.rollsrdev --instanceurl https://andersengm--rollsrdev.sandbox.my.salesforce.com/
             displayName: 'Authorize the salesforce org'
 
-          - bash: sfdx force:source:deploy -p force-app -u gowthams@bossinitech.com.rollsrdev --dry-run --ignore-conflicts --ignore-warnings --test-level NoTestRun
-            displayName: 'Dry-run Deploy (Validation only) to DeployTestOrg Org'
+          - bash: sfdx force:source:deploy -p force-app -u gowthams@bossinitech.com.rollsrdev -l RunSpecifiedTests -r AccountCreatorTest
+            displayName: ' Deploy (Validation only) to DeployTestOrg Org'
               
