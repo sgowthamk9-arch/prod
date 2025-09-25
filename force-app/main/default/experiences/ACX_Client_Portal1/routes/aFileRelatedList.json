@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "c8b86afa-86b0-4c03-969f-6981828c5428",
+  "appPageId" : "009dd51a-6ab1-4381-8505-1a0631cdad2c",
+  "configurationTags" : [ ],
+  "devName" : "A_File_Related_List__c",
+  "id" : "4ccef426-eaf7-4269-8f86-47bad5b9ded6",
+  "label" : "A-File Related List",
+  "objectApiName" : "ace_File__c",
+  "routeType" : "relatedlist-a0Q",
+  "type" : "route",
+  "urlPrefix" : "ace-file"
+}

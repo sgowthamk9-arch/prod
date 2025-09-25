@@ -1,0 +1,113 @@
+{
+  "appPageId" : "b23cfbb9-a656-486f-81c0-1ccb6f576a09",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "1365b8eb-8355-4d60-9602-2d59c57e4081",
+  "label" : "ContactUs",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "62f95f6a-b24e-4601-a2e2-0474d12f1174",
+          "columns" : [ {
+            "UUID" : "d23694f8-02b2-4934-9923-381ca5ad2f34",
+            "columnKey" : "4f10a",
+            "columnName" : "Column 1",
+            "columnWidth" : "4",
+            "seedComponents" : [ ]
+          }, {
+            "UUID" : "315db34b-72e1-4842-8aca-befc1577a9b5",
+            "columnKey" : "d5220",
+            "columnName" : "Column 2",
+            "columnWidth" : "4",
+            "seedComponents" : [ ]
+          }, {
+            "UUID" : "4f720a6d-a73b-4c0e-bee0-f004c406e38d",
+            "columnKey" : "28404",
+            "columnName" : "Column 3",
+            "columnWidth" : "4",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "62f95f6a-b24e-4601-a2e2-0474d12f1174",
+      "regions" : [ {
+        "id" : "d23694f8-02b2-4934-9923-381ca5ad2f34",
+        "regionLabel" : "Column 1",
+        "regionName" : "4f10a",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "id" : "315db34b-72e1-4842-8aca-befc1577a9b5",
+        "regionLabel" : "Column 2",
+        "regionName" : "d5220",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "id" : "4f720a6d-a73b-4c0e-bee0-f004c406e38d",
+        "regionLabel" : "Column 3",
+        "regionName" : "28404",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "e7fbe461-34c1-4c84-8ccb-c3f6be5c474c",
+          "columns" : [ {
+            "UUID" : "8f9d46c5-2e0a-4f89-ada6-64b907fd4186",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "e7fbe461-34c1-4c84-8ccb-c3f6be5c474c",
+      "regions" : [ {
+        "id" : "8f9d46c5-2e0a-4f89-ada6-64b907fd4186",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "61ee29a1-02ae-44c7-bed1-0aaba38f934c",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "ContactUs"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "6f5bb7d8-527f-4d1e-b02e-d5bcdbb740bf",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "cacba6ab-d326-4e5a-b622-7e15c393e941",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-contactus"
+}

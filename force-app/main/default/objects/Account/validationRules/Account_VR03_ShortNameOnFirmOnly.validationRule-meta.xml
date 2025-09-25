@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_VR03_ShortNameOnFirmOnly</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+$CustomMetadata.DisableAutomation__mdt.Account.IsActiveValidationRule__c = True,
+NOT(ISBLANK(ShortName__c)) &amp;&amp;
+RecordType.DeveloperName &lt;&gt; &quot;Firm&quot;
+)</errorConditionFormula>
+    <errorDisplayField>ShortName__c</errorDisplayField>
+    <errorMessage>Account_VR03: ShortName should only be populated for Firm accounts.</errorMessage>
+</ValidationRule>

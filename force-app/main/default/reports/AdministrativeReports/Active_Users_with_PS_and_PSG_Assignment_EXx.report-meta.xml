@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>PermissionSetAssignment$PermissionSetGroup</field>
+    </columns>
+    <!--columns>
+        <field>CDF1</field>
+    </columns-->
+    <currency>USD</currency>
+    <!--customDetailFormulas>
+        <calculatedFormula>IF(ISBLANK(PermissionSetAssignment.PermissionSetGroup.DeveloperName), PermissionSetAssignment.PermissionSet.Label, null)</calculatedFormula>
+        <dataType>Text</dataType>
+        <developerName>CDF1</developerName>
+        <label>Permission Set Name</label>
+        <scale>2</scale>
+    </customDetailFormulas-->
+    <filter>
+        <criteriaItems>
+            <column>PermissionSetAssignment$Assignee.IsActive</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>PermissionSetAssignment$Assignee</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>PermissionSetAssignment$Assignee.Profile</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Active Users with PS and PSG Assignment</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Permission_Set_Assignment__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>PermissionSetAssignment$ExpirationDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "801e76b1-7b51-430b-b5d2-7bf1fc1a7d46",
+  "appPageId" : "009dd51a-6ab1-4381-8505-1a0631cdad2c",
+  "configurationTags" : [ ],
+  "devName" : "Payment_Tracking_Hub__c",
+  "id" : "0e009335-7035-4a9c-afb9-b818e6be00c8",
+  "label" : "Payment Tracking Hub",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-payment-tracking-hub",
+  "type" : "route",
+  "urlPrefix" : "payment-tracking-hub"
+}

@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>Work_Record__c</baseObject>
+    <category>other</category>
+    <deployed>true</deployed>
+    <description>Work Records with Mobile Employee and Work Record Documents</description>
+    <join>
+        <outerJoin>true</outerJoin>
+        <relationship>Work_Record_Documents__r</relationship>
+    </join>
+    <label>Work Records with Mobile Employee and Work Record Documents</label>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Work Record ID</displayNameOverride>
+            <field>Id</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Owner</displayNameOverride>
+            <field>Owner</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <displayNameOverride>Work Record Name</displayNameOverride>
+            <field>Name</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Currency</displayNameOverride>
+            <field>CurrencyIsoCode</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Record Type</displayNameOverride>
+            <field>RecordType</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created Date</displayNameOverride>
+            <field>CreatedDate</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created By</displayNameOverride>
+            <field>CreatedBy</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified Date</displayNameOverride>
+            <field>LastModifiedDate</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified By</displayNameOverride>
+            <field>LastModifiedBy</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Activity Date</displayNameOverride>
+            <field>LastActivityDate</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Engagement Line Item</displayNameOverride>
+            <field>Engagement_Line_Item__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Engagement Assignee</displayNameOverride>
+            <field>Engagement_Assignee__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Type</displayNameOverride>
+            <field>Type__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Milestone</displayNameOverride>
+            <field>Milestone__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Estimated Completion Date</displayNameOverride>
+            <field>Estimated_Completion_Date__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Year</displayNameOverride>
+            <field>Year__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Engagement</displayNameOverride>
+            <field>Engagement__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Tax Return Summary</displayNameOverride>
+            <field>Tax_Return_Summary__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Status</displayNameOverride>
+            <field>Status__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Budgeted Hours</displayNameOverride>
+            <field>Budgeted_Hours__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Work Record ID</displayNameOverride>
+            <field>Work_Record_ID__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Work Record Contact</displayNameOverride>
+            <field>Work_Record_Contact__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Service Status</displayNameOverride>
+            <field>Milestone_for_Client__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Individual</displayNameOverride>
+            <field>Individual__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Country</displayNameOverride>
+            <field>Country__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Tax_Return_Approval_Date</displayNameOverride>
+            <field>Tax_Return_Approval_Date__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Tax Return Feedback</displayNameOverride>
+            <field>Tax_Return_Feedback__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Tax Return Approval</displayNameOverride>
+            <field>Tax_Return_Approval__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Changes Required</displayNameOverride>
+            <field>Changes_Required__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Work Record Name Formula</displayNameOverride>
+            <field>Work_Record_Name_Formula__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Other Service Type</displayNameOverride>
+            <field>Other_Service_Type__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Net Amount in Pocket</displayNameOverride>
+            <field>Net_Amount_in_Pocket__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Net Amount out of Pocket</displayNameOverride>
+            <field>Net_Amount_out_of_Pocket__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Responsible Office</displayNameOverride>
+            <field>Responsible_Office__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Signed Name</displayNameOverride>
+            <field>Signed_Name__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Work Record Contact Name</displayNameOverride>
+            <field>Work_Record_Contact_Name__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Work Record Contact Phone</displayNameOverride>
+            <field>Work_Record_Contact_Phone__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Work Record Contact Email</displayNameOverride>
+            <field>Work_Record_Contact_Email__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>of_Records__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Date_Certificate_of_Coverage_Filed__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Date_Certificate_of_Coverage_Expires__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <masterLabel>Work Records</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Work Record Document ID</displayNameOverride>
+            <field>Id</field>
+            <table>Work_Record__c.Work_Record_Documents__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Owner</displayNameOverride>
+            <field>Owner</field>
+            <table>Work_Record__c.Work_Record_Documents__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <displayNameOverride>Work Record Document Name</displayNameOverride>
+            <field>Name</field>
+            <table>Work_Record__c.Work_Record_Documents__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Currency</displayNameOverride>
+            <field>CurrencyIsoCode</field>
+            <table>Work_Record__c.Work_Record_Documents__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created Date</displayNameOverride>
+            <field>CreatedDate</field>
+            <table>Work_Record__c.Work_Record_Documents__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created By</displayNameOverride>
+            <field>CreatedBy</field>
+            <table>Work_Record__c.Work_Record_Documents__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified Date</displayNameOverride>
+            <field>LastModifiedDate</field>
+            <table>Work_Record__c.Work_Record_Documents__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified By</displayNameOverride>
+            <field>LastModifiedBy</field>
+            <table>Work_Record__c.Work_Record_Documents__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Activity Date</displayNameOverride>
+            <field>LastActivityDate</field>
+            <table>Work_Record__c.Work_Record_Documents__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Type</displayNameOverride>
+            <field>Type__c</field>
+            <table>Work_Record__c.Work_Record_Documents__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Completion Date</displayNameOverride>
+            <field>Completion_Date__c</field>
+            <table>Work_Record__c.Work_Record_Documents__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Country</displayNameOverride>
+            <field>Country__c</field>
+            <table>Work_Record__c.Work_Record_Documents__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Client Payment Complete</displayNameOverride>
+            <field>Client_Payment_Complete__c</field>
+            <table>Work_Record__c.Work_Record_Documents__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Equalization Amount (no longer used)</displayNameOverride>
+            <field>Equalization_Amount__c</field>
+            <table>Work_Record__c.Work_Record_Documents__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Net Amount</displayNameOverride>
+            <field>Amount__c</field>
+            <table>Work_Record__c.Work_Record_Documents__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Filing Method</displayNameOverride>
+            <field>Filing_Method__c</field>
+            <table>Work_Record__c.Work_Record_Documents__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Filing Deadline</displayNameOverride>
+            <field>Filing_Deadline__c</field>
+            <table>Work_Record__c.Work_Record_Documents__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>State/Province Name</displayNameOverride>
+            <field>State_Province_Name__c</field>
+            <table>Work_Record__c.Work_Record_Documents__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>State/Province Amount</displayNameOverride>
+            <field>State_Province_Amount__c</field>
+            <table>Work_Record__c.Work_Record_Documents__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Party Responsible</displayNameOverride>
+            <field>Party_Responsible__c</field>
+            <table>Work_Record__c.Work_Record_Documents__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date Posted</displayNameOverride>
+            <field>Date_Posted__c</field>
+            <table>Work_Record__c.Work_Record_Documents__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date Due</displayNameOverride>
+            <field>Date_Due__c</field>
+            <table>Work_Record__c.Work_Record_Documents__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Engagement Assignee Name</displayNameOverride>
+            <field>Mobile_Employee__c</field>
+            <table>Work_Record__c.Work_Record_Documents__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Type Formula</displayNameOverride>
+            <field>Type_Formula__c</field>
+            <table>Work_Record__c.Work_Record_Documents__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Work Record Name</displayNameOverride>
+            <field>Work_Record_Name__c</field>
+            <table>Work_Record__c.Work_Record_Documents__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Client Payment Date</displayNameOverride>
+            <field>Client_Payment_Date__c</field>
+            <table>Work_Record__c.Work_Record_Documents__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Client Payment User</displayNameOverride>
+            <field>Client_Payment_User__c</field>
+            <table>Work_Record__c.Work_Record_Documents__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Client Payment Notes</displayNameOverride>
+            <field>Client_Payment_Notes__c</field>
+            <table>Work_Record__c.Work_Record_Documents__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Settlement_Type__c</field>
+            <table>Work_Record__c.Work_Record_Documents__r</table>
+        </columns>
+        <masterLabel>Work Record Documents</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Engagement_Assignee__c.Actual_Assignment_End_Date__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Engagement_Assignee__c.Actual_Assignment_Start_Date__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Engagement_Assignee__c.Assignee__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Engagement_Assignee__c.Assignment_Country__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Engagement_Assignee__c.Assignment_Locality__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Engagement_Assignee__c.Assignment_Type__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Engagement_Assignee__c.Client_Notes__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Engagement_Assignee__c.CreatedBy</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Engagement_Assignee__c.CreatedDate</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Engagement_Assignee__c.CurrencyIsoCode</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Engagement_Assignee__c.Departure_Country__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Engagement_Assignee__c.Departure_Locality__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Engagement_Assignee__c.Email__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Engagement_Assignee__c.Engagements__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Engagement_Assignee__c.Engagement_Assignee_Name_Formula__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Engagement_Assignee__c.Id</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Engagement_Assignee__c.Name</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Engagement_Assignee__c.Estimated_Assignment_End_Date__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Engagement_Assignee__c.Estimated_Assignment_Start_Date__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Engagement_Assignee__c.First_Name__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Engagement_Assignee__c.Home_Equalized_Country__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Engagement_Assignee__c.Home_Equalized_Locality__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Engagement_Assignee__c.Internal_Notes__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Engagement_Assignee__c.LastActivityDate</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Engagement_Assignee__c.LastModifiedBy</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Engagement_Assignee__c.LastModifiedDate</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Engagement_Assignee__c.Last_Name__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Engagement_Assignee__c.Phone_Number__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Engagement_Assignee__c.Status__c</field>
+            <table>Work_Record__c</table>
+        </columns>
+        <masterLabel>Engagement Mobile Employee</masterLabel>
+    </sections>
+</ReportType>

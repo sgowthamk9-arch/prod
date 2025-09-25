@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <label>Type</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Federal_Tax_Return</fullName>
+                <default>false</default>
+                <label>Federal Tax Return</label>
+            </value>
+            <value>
+                <fullName>Equalization</fullName>
+                <default>false</default>
+                <label>Equalization</label>
+            </value>
+            <value>
+                <fullName>FBAR</fullName>
+                <default>false</default>
+                <label>FBAR</label>
+            </value>
+            <value>
+                <fullName>State_Return</fullName>
+                <default>false</default>
+                <label>State Return</label>
+            </value>
+            <value>
+                <fullName>Provincial_Return</fullName>
+                <default>false</default>
+                <label>Provincial Return</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

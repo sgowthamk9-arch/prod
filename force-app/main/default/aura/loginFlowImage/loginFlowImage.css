@@ -1,0 +1,15 @@
+.THIS .image-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: auto;
+    height: 100vh; 
+    text-align: center; 
+}
+
+
+
+.THIS .responsive-image {
+    max-width: 100%; 
+    height: auto;
+}

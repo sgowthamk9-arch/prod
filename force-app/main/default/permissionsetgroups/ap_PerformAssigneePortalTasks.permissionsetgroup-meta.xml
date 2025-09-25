@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Tasks related to Assignee Portal – consent &amp; file tasks.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>ap_PerformAssigneePortalTasks</label>
+    <permissionSets>ap_AccessConsentCreation</permissionSets>
+    <permissionSets>ap_AccountViewandEdit</permissionSets>
+    <permissionSets>ap_ApexClass</permissionSets>
+    <permissionSets>ap_ConsentsViewandSign</permissionSets>
+    <permissionSets>ap_EngagementView</permissionSets>
+    <permissionSets>ap_FilesUploadandView</permissionSets>
+    <permissionSets>ap_UserViewandEdit</permissionSets>
+    <permissionSets>ap_WorkRecords</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

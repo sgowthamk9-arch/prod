@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Bypass_User_Email_Duplicate_Rule</name>
+    </customPermissions>
+    <description>Grants test users the ability to bypass certain automation (like duplicate email restrictions) required for setting up test data in UAT environments. This permission set is intended for testing purposes only and should not be assigned in production.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Configure UAT Test Data</label>
+</PermissionSet>

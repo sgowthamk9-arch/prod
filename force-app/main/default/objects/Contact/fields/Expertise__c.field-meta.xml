@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Expertise__c</fullName>
+    <label>Expertise</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Tax Compliance</fullName>
+                <default>false</default>
+                <label>Tax Compliance</label>
+            </value>
+            <value>
+                <fullName>Social Security</fullName>
+                <default>false</default>
+                <label>Social Security</label>
+            </value>
+            <value>
+                <fullName>Payroll Support</fullName>
+                <default>false</default>
+                <label>Payroll Support</label>
+            </value>
+            <value>
+                <fullName>Employment Tax</fullName>
+                <default>false</default>
+                <label>Employment Tax</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

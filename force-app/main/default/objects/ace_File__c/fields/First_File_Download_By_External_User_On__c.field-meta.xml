@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>First_File_Download_By_External_User_On__c</fullName>
+    <description>Identifies the date when the external user first downloaded this file. This should be populated via an implementation of a custom download function.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <label>First File Download By External User On</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

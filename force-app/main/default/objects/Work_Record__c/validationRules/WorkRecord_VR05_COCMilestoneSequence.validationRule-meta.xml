@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WorkRecord_VR05_COCMilestoneSequence</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    ISPICKVAL(Type__c, &quot;Certificate of Coverage&quot;),
+    ISCHANGED(Milestone__c),
+    NOT(
+        OR(
+            TEXT(Milestone__c) = TEXT(PRIORVALUE(Milestone__c)),  
+            AND(
+                TEXT(Milestone__c) = &quot;Data Collection&quot;,
+                TEXT(PRIORVALUE(Milestone__c)) = &quot;Record Created&quot;
+            ),
+            AND(
+                TEXT(Milestone__c) = &quot;Record Created&quot;,
+                TEXT(PRIORVALUE(Milestone__c)) = &quot;Data Collection&quot;
+            ),
+            AND(
+                TEXT(Milestone__c) = &quot;Initial Review&quot;,
+                TEXT(PRIORVALUE(Milestone__c)) = &quot;Data Collection&quot;
+            ),
+            AND(
+                TEXT(Milestone__c) = &quot;Data Collection&quot;,
+                TEXT(PRIORVALUE(Milestone__c)) = &quot;Initial Review&quot;
+            ),
+            AND(
+                TEXT(Milestone__c) = &quot;Preparation&quot;,
+                TEXT(PRIORVALUE(Milestone__c)) = &quot;Initial Review&quot;
+            ),
+            AND(
+                TEXT(Milestone__c) = &quot;Initial Review&quot;,
+                TEXT(PRIORVALUE(Milestone__c)) = &quot;Preparation&quot;
+            ),
+            AND(
+                TEXT(Milestone__c) = &quot;Review&quot;,
+                TEXT(PRIORVALUE(Milestone__c)) = &quot;Preparation&quot;
+            ),
+            AND(
+                TEXT(Milestone__c) = &quot;Preparation&quot;,
+                TEXT(PRIORVALUE(Milestone__c)) = &quot;Review&quot;
+            ),
+            AND(
+                TEXT(Milestone__c) = &quot;Filing&quot;,
+                TEXT(PRIORVALUE(Milestone__c)) = &quot;Review&quot;
+            ),
+            AND(
+                TEXT(Milestone__c) = &quot;Review&quot;,
+                TEXT(PRIORVALUE(Milestone__c)) = &quot;Filing&quot;
+            ),
+            AND(
+                TEXT(Milestone__c) = &quot;Record Completed&quot;,
+                TEXT(PRIORVALUE(Milestone__c)) = &quot;Filing&quot;
+            ),
+            AND(
+                TEXT(Milestone__c) = &quot;Filing&quot;,
+                TEXT(PRIORVALUE(Milestone__c)) = &quot;Record Completed&quot;
+            )
+        )
+    )
+)</errorConditionFormula>
+    <errorMessage>WorkRecord_VR05: Each milestone must be completed in order.</errorMessage>
+</ValidationRule>

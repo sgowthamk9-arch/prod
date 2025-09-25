@@ -1,0 +1,36 @@
+<apex:component access="global">
+    <style type="text/css">
+        .email-footer {
+            font-size: 12px;
+            color: #666;
+            font-family: sans-serif;
+            margin-top: 10px;
+            line-height: 18px;
+            padding-bottom: 20px;
+        }
+
+        .email-footer__paragraph {
+            margin: 0 0 10px 0;
+        }
+
+        .email-footer-container {
+            margin: 0px 20px;
+        }
+    </style>
+    <apex:attribute name="contactUsText" type="String" description="Contact info text" />
+    <apex:attribute name="copyrightDisclaimer" type="String" description="Copyright notice" />
+
+    <div style="margin: 0px 20px;">
+        <hr style="border:0; border-top:1px solid #ccc;" />
+        <div class="email-footer">
+            <div class="email-footer__paragraph">
+                <apex:outputText value="{!$Label.acx_EmailFooterContactUs}" rendered="{!NOT(ISNULL($Label.acx_EmailFooterContactUs))}" />
+            </div>
+            <br/><br/>
+            <div class="email-footer__paragraph">
+                <apex:outputText value="{!$Label.acx_EmailFooterCopyDisclaimer}" rendered="{!NOT(ISNULL($Label.acx_EmailFooterCopyDisclaimer))}" />
+            </div>
+        </div>
+    </div>
+    
+</apex:component>

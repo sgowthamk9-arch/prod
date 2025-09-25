@@ -1,0 +1,27 @@
+<apex:component access="global">
+    <apex:attribute name="titleText" type="String" description="Optional title for the header"/>
+
+    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse; font-family: Arial, sans-serif; margin-bottom: 20px; table-layout: fixed;">
+        <tr>
+            <td width="50%" style="text-align: left; vertical-align: middle; padding: 15px 0 0 20px;">
+                <img src="{!$Label.Andersen_Logo_URL}" 
+                     alt="Andersen Logo" 
+                     width="200" 
+                     height="50" 
+                     style="height: 70px; max-height: 70px; width: auto; display: block; border: none;" />
+            </td>
+            <td width="50%" style="text-align: right; vertical-align: middle; font-size: 12px; color: #888; font-family: Arial, sans-serif; padding: 15px 20px 0 0;">
+                <apex:outputText value="{0,date,medium}">
+                    <apex:param value="{!NOW()}" />
+                </apex:outputText>
+            </td>
+        </tr>
+        <apex:outputPanel rendered="{!NOT(ISNULL(titleText))}">
+        <tr>
+            <td colspan="2" style="padding: 10px 20px 0 20px; font-size: 18px; font-weight: bold; font-family: Arial, sans-serif;">
+                {!titleText}
+            </td>
+        </tr>
+        </apex:outputPanel>
+    </table>
+</apex:component>

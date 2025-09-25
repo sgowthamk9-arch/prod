@@ -1,0 +1,22 @@
+<apex:component access="global">
+    <apex:attribute name="destinationUrl" type="String" description="URL the button will link to" />
+    <apex:attribute name="ctaText" type="String" description="Text to display on the CTA button" />
+
+    <!-- Remove table wrapper, use direct div approach -->
+    <div style="text-align: center; margin: 10px 0;">
+        <a href="{!destinationUrl}" 
+           style="display: inline-block; 
+                  background-color: #AB0E1E; 
+                  color: white !important; 
+                  padding: 15px 30px; 
+                  font-size: 16px; 
+                  line-height: 24px; 
+                  font-weight: 400; 
+                  text-decoration: none; 
+                  border-radius: 50px; 
+                  font-family: Arial, sans-serif;
+                  border: none;">
+            {!ctaText}
+        </a>
+    </div>
+</apex:component>

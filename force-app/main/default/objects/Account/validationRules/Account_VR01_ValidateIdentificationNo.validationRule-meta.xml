@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_VR01_ValidateIdentificationNo</fullName>
+    <active>true</active>
+    <description>JIRA:AGMPB-523</description>
+    <errorConditionFormula>AND(
+    OR(
+        ISPICKVAL(Type_of_Identification_Number__pc, &quot;SSN&quot;),
+        ISPICKVAL(Type_of_Identification_Number__pc, &quot;ITIN&quot;)
+    ),
+    NOT(REGEX(Identification_Number__pc, &quot;^[0-9]{3}-[0-9]{2}-[0-9]{4}$&quot;))
+)</errorConditionFormula>
+    <errorDisplayField>Identification_Number__pc</errorDisplayField>
+    <errorMessage>Account_VR01:The identification number must be in the format XXX-XX-XXXX for SSN or ITIN.</errorMessage>
+</ValidationRule>

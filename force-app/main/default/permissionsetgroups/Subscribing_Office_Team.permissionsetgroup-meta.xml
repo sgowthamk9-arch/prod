@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Subscribing Office Team</label>
+    <permissionSets>Create_Ace_File</permissionSets>
+    <permissionSets>Create_Information_Requests</permissionSets>
+    <permissionSets>Create_Work_Authorizations</permissionSets>
+    <permissionSets>Create_and_Edit_Reports_and_Dashboards</permissionSets>
+    <permissionSets>Create_and_Edit_Work_Record_Documents</permissionSets>
+    <permissionSets>Edit_Consents</permissionSets>
+    <permissionSets>Edit_Work_Records</permissionSets>
+    <permissionSets>Respond_to_Information_Requests</permissionSets>
+    <permissionSets>Review_Ace_File</permissionSets>
+    <permissionSets>View_Ace_File</permissionSets>
+    <permissionSets>View_Consents</permissionSets>
+    <permissionSets>View_Engagements</permissionSets>
+    <permissionSets>View_Information_Requests</permissionSets>
+    <permissionSets>View_Mobile_Employees</permissionSets>
+    <permissionSets>View_Work_Authorizations</permissionSets>
+    <permissionSets>View_Work_Record_Documents</permissionSets>
+    <permissionSets>View_Work_Records</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "0f7eeeed-1351-4793-baa0-5a79a0a59adc",
+  "appPageId" : "b23cfbb9-a656-486f-81c0-1ccb6f576a09",
+  "configurationTags" : [ ],
+  "devName" : "Document_Center__c",
+  "id" : "ac18b088-fc8e-456d-a882-60d9eedf822c",
+  "label" : "Document Center",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-document-center",
+  "type" : "route",
+  "urlPrefix" : "document-center"
+}

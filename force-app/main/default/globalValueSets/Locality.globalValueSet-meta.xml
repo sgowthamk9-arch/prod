@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Alabama</fullName>
+        <default>false</default>
+        <label>Alabama</label>
+    </customValue>
+    <customValue>
+        <fullName>Alaska</fullName>
+        <default>false</default>
+        <label>Alaska</label>
+    </customValue>
+    <customValue>
+        <fullName>Arizona</fullName>
+        <default>false</default>
+        <label>Arizona</label>
+    </customValue>
+    <customValue>
+        <fullName>Arkansas</fullName>
+        <default>false</default>
+        <label>Arkansas</label>
+    </customValue>
+    <customValue>
+        <fullName>California</fullName>
+        <default>false</default>
+        <label>California</label>
+    </customValue>
+    <customValue>
+        <fullName>Colorado</fullName>
+        <default>false</default>
+        <label>Colorado</label>
+    </customValue>
+    <customValue>
+        <fullName>Connecticut</fullName>
+        <default>false</default>
+        <label>Connecticut</label>
+    </customValue>
+    <customValue>
+        <fullName>Delaware</fullName>
+        <default>false</default>
+        <label>Delaware</label>
+    </customValue>
+    <customValue>
+        <fullName>Florida</fullName>
+        <default>false</default>
+        <label>Florida</label>
+    </customValue>
+    <customValue>
+        <fullName>Georgia</fullName>
+        <default>false</default>
+        <label>Georgia</label>
+    </customValue>
+    <customValue>
+        <fullName>Hawaii</fullName>
+        <default>false</default>
+        <label>Hawaii</label>
+    </customValue>
+    <customValue>
+        <fullName>Idaho</fullName>
+        <default>false</default>
+        <label>Idaho</label>
+    </customValue>
+    <customValue>
+        <fullName>Illinois</fullName>
+        <default>false</default>
+        <label>Illinois</label>
+    </customValue>
+    <customValue>
+        <fullName>Indiana</fullName>
+        <default>false</default>
+        <label>Indiana</label>
+    </customValue>
+    <customValue>
+        <fullName>Iowa</fullName>
+        <default>false</default>
+        <label>Iowa</label>
+    </customValue>
+    <customValue>
+        <fullName>Kansas</fullName>
+        <default>false</default>
+        <label>Kansas</label>
+    </customValue>
+    <customValue>
+        <fullName>Kentucky</fullName>
+        <default>false</default>
+        <label>Kentucky</label>
+    </customValue>
+    <customValue>
+        <fullName>Louisiana</fullName>
+        <default>false</default>
+        <label>Louisiana</label>
+    </customValue>
+    <customValue>
+        <fullName>Maine</fullName>
+        <default>false</default>
+        <label>Maine</label>
+    </customValue>
+    <customValue>
+        <fullName>Maryland</fullName>
+        <default>false</default>
+        <label>Maryland</label>
+    </customValue>
+    <customValue>
+        <fullName>Massachusetts</fullName>
+        <default>false</default>
+        <label>Massachusetts</label>
+    </customValue>
+    <customValue>
+        <fullName>Michigan</fullName>
+        <default>false</default>
+        <label>Michigan</label>
+    </customValue>
+    <customValue>
+        <fullName>Minnesota</fullName>
+        <default>false</default>
+        <label>Minnesota</label>
+    </customValue>
+    <customValue>
+        <fullName>Mississippi</fullName>
+        <default>false</default>
+        <label>Mississippi</label>
+    </customValue>
+    <customValue>
+        <fullName>Missouri</fullName>
+        <default>false</default>
+        <label>Missouri</label>
+    </customValue>
+    <customValue>
+        <fullName>Montana</fullName>
+        <default>false</default>
+        <label>Montana</label>
+    </customValue>
+    <customValue>
+        <fullName>Nebraska</fullName>
+        <default>false</default>
+        <label>Nebraska</label>
+    </customValue>
+    <customValue>
+        <fullName>Nevada</fullName>
+        <default>false</default>
+        <label>Nevada</label>
+    </customValue>
+    <customValue>
+        <fullName>New Hampshire</fullName>
+        <default>false</default>
+        <label>New Hampshire</label>
+    </customValue>
+    <customValue>
+        <fullName>New Jersey</fullName>
+        <default>false</default>
+        <label>New Jersey</label>
+    </customValue>
+    <customValue>
+        <fullName>New Mexico</fullName>
+        <default>false</default>
+        <label>New Mexico</label>
+    </customValue>
+    <customValue>
+        <fullName>New York</fullName>
+        <default>false</default>
+        <label>New York</label>
+    </customValue>
+    <customValue>
+        <fullName>New York City</fullName>
+        <default>false</default>
+        <label>New York City</label>
+    </customValue>
+    <customValue>
+        <fullName>North Carolina</fullName>
+        <default>false</default>
+        <label>North Carolina</label>
+    </customValue>
+    <customValue>
+        <fullName>North Dakota</fullName>
+        <default>false</default>
+        <label>North Dakota</label>
+    </customValue>
+    <customValue>
+        <fullName>Ohio</fullName>
+        <default>false</default>
+        <label>Ohio</label>
+    </customValue>
+    <customValue>
+        <fullName>Ohio - Akron</fullName>
+        <default>false</default>
+        <label>Ohio - Akron</label>
+    </customValue>
+    <customValue>
+        <fullName>Ohio - Cincinnati</fullName>
+        <default>false</default>
+        <label>Ohio - Cincinnati</label>
+    </customValue>
+    <customValue>
+        <fullName>Ohio - Cleveland</fullName>
+        <default>false</default>
+        <label>Ohio - Cleveland</label>
+    </customValue>
+    <customValue>
+        <fullName>Ohio - Columbus</fullName>
+        <default>false</default>
+        <label>Ohio - Columbus</label>
+    </customValue>
+    <customValue>
+        <fullName>Ohio - Toledo</fullName>
+        <default>false</default>
+        <label>Ohio - Toledo</label>
+    </customValue>
+    <customValue>
+        <fullName>Oklahoma</fullName>
+        <default>false</default>
+        <label>Oklahoma</label>
+    </customValue>
+    <customValue>
+        <fullName>Oregon</fullName>
+        <default>false</default>
+        <label>Oregon</label>
+    </customValue>
+    <customValue>
+        <fullName>Pennsylvania</fullName>
+        <default>false</default>
+        <label>Pennsylvania</label>
+    </customValue>
+    <customValue>
+        <fullName>Pennsylvania - Allentown</fullName>
+        <default>false</default>
+        <label>Pennsylvania - Allentown</label>
+    </customValue>
+    <customValue>
+        <fullName>Pennsylvania - Erie</fullName>
+        <default>false</default>
+        <label>Pennsylvania - Erie</label>
+    </customValue>
+    <customValue>
+        <fullName>Pennsylvania - Philadelphia</fullName>
+        <default>false</default>
+        <label>Pennsylvania - Philadelphia</label>
+    </customValue>
+    <customValue>
+        <fullName>Pennsylvania - Pittsburgh</fullName>
+        <default>false</default>
+        <label>Pennsylvania - Pittsburgh</label>
+    </customValue>
+    <customValue>
+        <fullName>Pennsylvania - Reading</fullName>
+        <default>false</default>
+        <label>Pennsylvania - Reading</label>
+    </customValue>
+    <customValue>
+        <fullName>Rhode Island</fullName>
+        <default>false</default>
+        <label>Rhode Island</label>
+    </customValue>
+    <customValue>
+        <fullName>South Carolina</fullName>
+        <default>false</default>
+        <label>South Carolina</label>
+    </customValue>
+    <customValue>
+        <fullName>South Dakota</fullName>
+        <default>false</default>
+        <label>South Dakota</label>
+    </customValue>
+    <customValue>
+        <fullName>Tennessee</fullName>
+        <default>false</default>
+        <label>Tennessee</label>
+    </customValue>
+    <customValue>
+        <fullName>Texas</fullName>
+        <default>false</default>
+        <label>Texas</label>
+    </customValue>
+    <customValue>
+        <fullName>Utah</fullName>
+        <default>false</default>
+        <label>Utah</label>
+    </customValue>
+    <customValue>
+        <fullName>Vermont</fullName>
+        <default>false</default>
+        <label>Vermont</label>
+    </customValue>
+    <customValue>
+        <fullName>Virginia</fullName>
+        <default>false</default>
+        <label>Virginia</label>
+    </customValue>
+    <customValue>
+        <fullName>Washington</fullName>
+        <default>false</default>
+        <label>Washington</label>
+    </customValue>
+    <customValue>
+        <fullName>West Virginia</fullName>
+        <default>false</default>
+        <label>West Virginia</label>
+    </customValue>
+    <customValue>
+        <fullName>Wisconsin</fullName>
+        <default>false</default>
+        <label>Wisconsin</label>
+    </customValue>
+    <customValue>
+        <fullName>Wyoming</fullName>
+        <default>false</default>
+        <label>Wyoming</label>
+    </customValue>
+    <customValue>
+        <fullName>Canada - Alberta</fullName>
+        <default>false</default>
+        <label>Canada - Alberta</label>
+    </customValue>
+    <customValue>
+        <fullName>Canada - British Columbia</fullName>
+        <default>false</default>
+        <label>Canada - British Columbia</label>
+    </customValue>
+    <customValue>
+        <fullName>Canada - Manitoba</fullName>
+        <default>false</default>
+        <label>Canada - Manitoba</label>
+    </customValue>
+    <customValue>
+        <fullName>Canada - New Brunswick</fullName>
+        <default>false</default>
+        <label>Canada - New Brunswick</label>
+    </customValue>
+    <customValue>
+        <fullName>Canada - Newfoundland and Labrador</fullName>
+        <default>false</default>
+        <label>Canada - Newfoundland and Labrador</label>
+    </customValue>
+    <customValue>
+        <fullName>Canada - Northwest Territories</fullName>
+        <default>false</default>
+        <label>Canada - Northwest Territories</label>
+    </customValue>
+    <customValue>
+        <fullName>Canada - Nova Scotia</fullName>
+        <default>false</default>
+        <label>Canada - Nova Scotia</label>
+    </customValue>
+    <customValue>
+        <fullName>Canada - Nunavut</fullName>
+        <default>false</default>
+        <label>Canada - Nunavut</label>
+    </customValue>
+    <customValue>
+        <fullName>Canada - Ontario</fullName>
+        <default>false</default>
+        <label>Canada - Ontario</label>
+    </customValue>
+    <customValue>
+        <fullName>Canada - Prince Edward Island</fullName>
+        <default>false</default>
+        <label>Canada - Prince Edward Island</label>
+    </customValue>
+    <customValue>
+        <fullName>Canada - Quebec</fullName>
+        <default>false</default>
+        <label>Canada - Quebec</label>
+    </customValue>
+    <customValue>
+        <fullName>Canada - Saskatchewan</fullName>
+        <default>false</default>
+        <label>Canada - Saskatchewan</label>
+    </customValue>
+    <customValue>
+        <fullName>Canada - Yukon</fullName>
+        <default>false</default>
+        <label>Canada - Yukon</label>
+    </customValue>
+    <customValue>
+        <fullName>Switzerland - Aargau</fullName>
+        <default>false</default>
+        <label>Switzerland - Aargau</label>
+    </customValue>
+    <customValue>
+        <fullName>Switzerland - Appenzell Ausserrhoden</fullName>
+        <default>false</default>
+        <label>Switzerland - Appenzell Ausserrhoden</label>
+    </customValue>
+    <customValue>
+        <fullName>Switzerland - Appenzell Innerrhoden</fullName>
+        <default>false</default>
+        <label>Switzerland - Appenzell Innerrhoden</label>
+    </customValue>
+    <customValue>
+        <fullName>Switzerland - Basel-Landschaft</fullName>
+        <default>false</default>
+        <label>Switzerland - Basel-Landschaft</label>
+    </customValue>
+    <customValue>
+        <fullName>Switzerland - Basel-Stadt</fullName>
+        <default>false</default>
+        <label>Switzerland - Basel-Stadt</label>
+    </customValue>
+    <customValue>
+        <fullName>Switzerland - Bern</fullName>
+        <default>false</default>
+        <label>Switzerland - Bern</label>
+    </customValue>
+    <customValue>
+        <fullName>Switzerland - Fribourg</fullName>
+        <default>false</default>
+        <label>Switzerland - Fribourg</label>
+    </customValue>
+    <customValue>
+        <fullName>Switzerland - Geneva</fullName>
+        <default>false</default>
+        <label>Switzerland - Geneva</label>
+    </customValue>
+    <customValue>
+        <fullName>Switzerland - Glarus</fullName>
+        <default>false</default>
+        <label>Switzerland - Glarus</label>
+    </customValue>
+    <customValue>
+        <fullName>Switzerland - Graubünden</fullName>
+        <default>false</default>
+        <label>Switzerland - Graubünden</label>
+    </customValue>
+    <customValue>
+        <fullName>Switzerland - Jura</fullName>
+        <default>false</default>
+        <label>Switzerland - Jura</label>
+    </customValue>
+    <customValue>
+        <fullName>Switzerland - Lucerne</fullName>
+        <default>false</default>
+        <label>Switzerland - Lucerne</label>
+    </customValue>
+    <customValue>
+        <fullName>Switzerland - Neuchâtel</fullName>
+        <default>false</default>
+        <label>Switzerland - Neuchâtel</label>
+    </customValue>
+    <customValue>
+        <fullName>Switzerland - Nidwalden</fullName>
+        <default>false</default>
+        <label>Switzerland - Nidwalden</label>
+    </customValue>
+    <customValue>
+        <fullName>Switzerland - Obwalden</fullName>
+        <default>false</default>
+        <label>Switzerland - Obwalden</label>
+    </customValue>
+    <customValue>
+        <fullName>Switzerland - Schaffhausen</fullName>
+        <default>false</default>
+        <label>Switzerland - Schaffhausen</label>
+    </customValue>
+    <customValue>
+        <fullName>Switzerland - Schwyz</fullName>
+        <default>false</default>
+        <label>Switzerland - Schwyz</label>
+    </customValue>
+    <customValue>
+        <fullName>Switzerland - Solothurn</fullName>
+        <default>false</default>
+        <label>Switzerland - Solothurn</label>
+    </customValue>
+    <customValue>
+        <fullName>Switzerland - St. Gallen</fullName>
+        <default>false</default>
+        <label>Switzerland - St. Gallen</label>
+    </customValue>
+    <customValue>
+        <fullName>Switzerland - Thurgau</fullName>
+        <default>false</default>
+        <label>Switzerland - Thurgau</label>
+    </customValue>
+    <customValue>
+        <fullName>Switzerland - Ticino</fullName>
+        <default>false</default>
+        <label>Switzerland - Ticino</label>
+    </customValue>
+    <customValue>
+        <fullName>Switzerland - Uri</fullName>
+        <default>false</default>
+        <label>Switzerland - Uri</label>
+    </customValue>
+    <customValue>
+        <fullName>Switzerland - Valais</fullName>
+        <default>false</default>
+        <label>Switzerland - Valais</label>
+    </customValue>
+    <customValue>
+        <fullName>Switzerland - Vaud</fullName>
+        <default>false</default>
+        <label>Switzerland - Vaud</label>
+    </customValue>
+    <customValue>
+        <fullName>Switzerland - Zug</fullName>
+        <default>false</default>
+        <label>Switzerland - Zug</label>
+    </customValue>
+    <customValue>
+        <fullName>Switzerland - Zurich</fullName>
+        <default>false</default>
+        <label>Switzerland - Zurich</label>
+    </customValue>
+    <customValue>
+        <fullName>Chicago</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Chicago</label>
+    </customValue>
+    <customValue>
+        <fullName>Toronto</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Toronto</label>
+    </customValue>
+    <customValue>
+        <fullName>Quebec</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Quebec</label>
+    </customValue>
+    <customValue>
+        <fullName>Montreal</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Montreal</label>
+    </customValue>
+    <customValue>
+        <fullName>Baltimore</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Baltimore</label>
+    </customValue>
+    <masterLabel>Locality</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

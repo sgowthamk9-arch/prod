@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Mobile</fullName>
+        <default>false</default>
+        <label>Mobile</label>
+    </customValue>
+    <customValue>
+        <fullName>Landline</fullName>
+        <default>false</default>
+        <label>Landline</label>
+    </customValue>
+    <masterLabel>Phone Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

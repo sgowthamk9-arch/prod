@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Work_Records_for_Reassignment</fullName>
+    <columns>NAME</columns>
+    <columns>Work_Record_Contact__c</columns>
+    <columns>RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Work_Record_Contact__c</field>
+        <operation>equals</operation>
+        <value>Todd Harrison</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Work_Record__c.Tax_Return</value>
+    </filters>
+    <label>Work Records for Reassignment</label>
+</ListView>

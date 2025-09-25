@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OriginalEntityContentDocumentKey__c</fullName>
+    <description>The concatentation of of the content document Id that the shared file associates to as well as the original linked entity.  Used in querying for Shared files where the content document Id is known.  This is relevant when a file is initially uploaded to another object and needs to be reparented.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <externalId>false</externalId>
+    <label>OriginalEntityContentDocumentKey</label>
+    <length>36</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

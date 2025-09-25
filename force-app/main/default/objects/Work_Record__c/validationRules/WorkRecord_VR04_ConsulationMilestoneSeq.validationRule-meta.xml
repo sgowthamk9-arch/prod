@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WorkRecord_VR04_ConsulationMilestoneSeq</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    ISPICKVAL(Type__c, &quot;Consultation&quot;),
+    ISCHANGED(Milestone__c),
+    NOT(
+        OR(
+            TEXT(Milestone__c) = TEXT(PRIORVALUE(Milestone__c)),  
+            AND(
+                TEXT(Milestone__c) = &quot;Awaiting Scheduling&quot;,
+                TEXT(PRIORVALUE(Milestone__c)) = &quot;Record Created&quot;
+            ),
+            AND(
+                TEXT(Milestone__c) = &quot;Record Created&quot;,
+                TEXT(PRIORVALUE(Milestone__c)) = &quot;Awaiting Scheduling&quot;
+            ),
+            AND(
+                TEXT(Milestone__c) = &quot;Scheduled&quot;,
+                TEXT(PRIORVALUE(Milestone__c)) = &quot;Awaiting Scheduling&quot;
+            ),
+            AND(
+                TEXT(Milestone__c) = &quot;Awaiting Scheduling&quot;,
+                TEXT(PRIORVALUE(Milestone__c)) = &quot;Scheduled&quot;
+            ),
+            AND(
+                TEXT(Milestone__c) = &quot;Post Consultation&quot;,
+                TEXT(PRIORVALUE(Milestone__c)) = &quot;Scheduled&quot;
+            ),
+            AND(
+                TEXT(Milestone__c) = &quot;Scheduled&quot;,
+                TEXT(PRIORVALUE(Milestone__c)) = &quot;Post Consultation&quot;
+            ),
+            AND(
+                TEXT(Milestone__c) = &quot;Record Completed&quot;,
+                TEXT(PRIORVALUE(Milestone__c)) = &quot;Post Consultation&quot;
+            ),
+            AND(
+                TEXT(Milestone__c) = &quot;Post Consultation&quot;,
+                TEXT(PRIORVALUE(Milestone__c)) = &quot;Record Completed&quot;
+            )
+        )
+    )
+)</errorConditionFormula>
+    <errorMessage>WorkRecord_VR04: Each milestone must be completed in order.</errorMessage>
+</ValidationRule>

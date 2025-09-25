@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Wet_Signed__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Indicates whether the consent form has been signed manually (wet signature) and uploaded. Used to track forms not signed via e-signature.</description>
+    <label>Wet Signed</label>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

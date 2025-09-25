@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>JIRA:386</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Manage Andersen Office Accounts</label>
+    <permissionSets>Manage_Firm_Accounts</permissionSets>
+    <permissionSets>Manage_Staff_Contacts</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

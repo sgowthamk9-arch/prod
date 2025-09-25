@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <decisions>
+        <name>What_Action_is_Needed</name>
+        <label>What Action is Needed?</label>
+        <locationX>842</locationX>
+        <locationY>134</locationY>
+        <defaultConnectorLabel>None</defaultConnectorLabel>
+        <rules>
+            <name>Review_Tax_Return</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>recordId.Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Review Tax Return</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>recordId.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Action Required</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Return_Review_Tax_Return_Sub_Flow</targetReference>
+            </connector>
+            <label>Review Tax Return</label>
+        </rules>
+        <rules>
+            <name>Schedule_Consultation</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>recordId.Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Schedule Consultation</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>recordId.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Action Required</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Schedule_Consultation_Sub_Flow</targetReference>
+            </connector>
+            <label>Schedule Consultation</label>
+        </rules>
+        <rules>
+            <name>Upload_File</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>recordId.Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Upload File</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>recordId.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Action Required</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Upload_File_Sub_Flow</targetReference>
+            </connector>
+            <label>Upload File</label>
+        </rules>
+        <rules>
+            <name>Information</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>recordId.Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Information</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>recordId.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Action Required</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Work_Record_Management</targetReference>
+            </connector>
+            <label>Information</label>
+        </rules>
+        <rules>
+            <name>Questionnaire</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>recordId.Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Questionnaire</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>recordId.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Action Required</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Questionnaire_Subflow</targetReference>
+            </connector>
+            <label>Questionnaire</label>
+        </rules>
+        <rules>
+            <name>Review_File</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>recordId.Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Review File</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>recordId.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Action Required</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Upload_FIle_Subflow</targetReference>
+            </connector>
+            <label>Review File</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>AP - Information Request ToDo Screen Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>AP - Information Request ToDo Screen Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <start>
+        <locationX>716</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>What_Action_is_Needed</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Questionnaire_Subflow</name>
+        <label>Questionnaire Subflow</label>
+        <locationX>1106</locationX>
+        <locationY>242</locationY>
+        <flowName>AP_Work_Record_Management_Questionnaire_Screen_Flow</flowName>
+        <inputAssignments>
+            <name>recordId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <subflows>
+        <name>Return_Review_Tax_Return_Sub_Flow</name>
+        <label>Return Review Tax Return Sub-Flow</label>
+        <locationX>50</locationX>
+        <locationY>242</locationY>
+        <flowName>AP_Review_Tax_Return_Screen_Flow</flowName>
+        <inputAssignments>
+            <name>recordId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <subflows>
+        <name>Schedule_Consultation_Sub_Flow</name>
+        <label>Schedule Consultation Sub-Flow</label>
+        <locationX>314</locationX>
+        <locationY>242</locationY>
+        <flowName>AP_Schedule_Consultation_Screen_Sub_Flow</flowName>
+        <inputAssignments>
+            <name>recordId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <subflows>
+        <name>Upload_File_Sub_Flow</name>
+        <label>Upload File Sub-Flow</label>
+        <locationX>578</locationX>
+        <locationY>242</locationY>
+        <flowName>AP_IR_ToDo_File_Upload_Sub_Flow</flowName>
+        <inputAssignments>
+            <name>InfoRequestId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </subflows>
+    <subflows>
+        <name>Upload_FIle_Subflow</name>
+        <label>Upload FIle Subflow</label>
+        <locationX>1370</locationX>
+        <locationY>242</locationY>
+        <flowName>AP_Review_File_Screen_Flow</flowName>
+        <inputAssignments>
+            <name>recordId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <subflows>
+        <name>Work_Record_Management</name>
+        <label>Work Record Management</label>
+        <locationX>842</locationX>
+        <locationY>242</locationY>
+        <flowName>AP_Work_Record_Management_IR_Screen_Flow</flowName>
+        <inputAssignments>
+            <name>recordId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <variables>
+        <name>recordId</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Information_Request__c</objectType>
+    </variables>
+</Flow>

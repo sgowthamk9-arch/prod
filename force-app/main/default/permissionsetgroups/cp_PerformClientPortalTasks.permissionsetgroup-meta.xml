@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Group for all Client Portal task permissions.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>cp_PerformClientPortalTasks</label>
+    <permissionSets>cp_ApexClass</permissionSets>
+    <permissionSets>cp_ConsentsViewandSign</permissionSets>
+    <permissionSets>cp_ContactViewandEdit</permissionSets>
+    <permissionSets>cp_EngagementView</permissionSets>
+    <permissionSets>cp_FilesUploadandView</permissionSets>
+    <permissionSets>cp_UserViewandEdit</permissionSets>
+    <permissionSets>cp_ViewMobileEmployees</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

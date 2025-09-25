@@ -1,0 +1,38 @@
+<messaging:emailTemplate subject="Consent Rejected {!relatedTo.Name} - {!relatedTo.Individual__r.Name}{!relatedTo.Contact__r.Name}" recipientType="User" relatedToType="Consent__c">
+
+<messaging:htmlEmailBody >
+Hello Team,<br/><br/>
+
+<apex:outputPanel rendered="{!relatedTo.Contact__c != Null}">
+{!relatedTo.Contact__r.Name}
+</apex:outputpanel>
+<apex:outputPanel rendered="{!relatedTo.Individual__c!= Null}">
+{!relatedTo.Individual__r.Name}
+</apex:outputpanel> rejected signing the {!relatedTo.Name} consent. You are being notified as part of an automated workflow.<br/><br/>
+
+<strong>Details:</strong><br/>
+
+Name: <apex:outputPanel rendered="{!relatedTo.Contact__c != Null}">
+{!relatedTo.Contact__r.Name}<br/>
+</apex:outputpanel>
+<apex:outputPanel rendered="{!relatedTo.Individual__c!= Null}">
+{!relatedTo.Individual__r.Name}<br/>
+</apex:outputpanel>
+<apex:outputPanel rendered="{!relatedTo.Contact__c != Null}">
+Contact Record Type: {!relatedTo.Contact__r.RecordType.Name}<br/>
+</apex:outputpanel>
+<apex:outputPanel rendered="{!relatedTo.Individual__c!= Null}">
+Account Record Type: {!relatedTo.Individual__r.RecordType.Name}<br/>
+</apex:outputpanel>
+<apex:outputPanel rendered="{!relatedTo.Individual__r.RecordType.Name == 'Client'}">
+Account: {!relatedTo.Individual__r.Partner_Account__r.Name}<br/>
+</apex:outputpanel>
+<apex:outputPanel rendered="{!relatedTo.Contact__c != Null}">
+Contact Link: <a href="{!$Label.Salesforce_Base_URL}/{!relatedTo.Contact__r.Id}">View Record</a>
+</apex:outputpanel>
+<apex:outputPanel rendered="{!relatedTo.Individual__c!= Null}">
+Account Link: <a href="{!$Label.Salesforce_Base_URL}/{!relatedTo.Individual__r.Id}">View Record</a>
+</apex:outputpanel>
+</messaging:htmlEmailBody>
+
+</messaging:emailTemplate>

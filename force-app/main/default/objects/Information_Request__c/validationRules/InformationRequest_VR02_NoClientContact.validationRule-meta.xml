@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InformationRequest_VR02_NoClientContact</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(ISBLANK(Client_Contact__c)) &amp;&amp;  TEXT(Assigned_To__c)&lt;&gt;&quot;Client&quot;</errorConditionFormula>
+    <errorDisplayField>Client_Contact__c</errorDisplayField>
+    <errorMessage>InformationRequest_VR02: Client Contact is not needed for this request</errorMessage>
+</ValidationRule>

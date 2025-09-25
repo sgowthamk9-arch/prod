@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Available_for_Newsletters__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If true, this output can be put into a newsletter Notification</description>
+    <label>Is Available for Newsletters?</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ScheduledRemovalDate__c</fullName>
+    <description>Describes the date at which point this file may be removed from the system via automated processes.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <inlineHelpText>When is this file scheduled to be deleted?</inlineHelpText>
+    <label>Scheduled Removal Date</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Email__c</fullName>
+    <description>This field retrieves the Primary Email from the Account when the Account allows or shares the Primary Email with the employee.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+ Assignee__r.Share_Primary_Email_with_Employer__c ,
+    Assignee__r.PersonContact.Primary_Email__c ,
+   
+   &quot;Information is not shared&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Primary Email</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

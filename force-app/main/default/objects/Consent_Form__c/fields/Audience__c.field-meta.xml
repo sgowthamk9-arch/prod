@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Audience__c</fullName>
+    <description>Controls which user group can access this consent form based on their role: Vendor, Assignee, Client, or Internal.</description>
+    <label>Audience</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Vendors</fullName>
+                <default>false</default>
+                <label>Vendors</label>
+            </value>
+            <value>
+                <fullName>Assignee</fullName>
+                <default>false</default>
+                <label>Assignee</label>
+            </value>
+            <value>
+                <fullName>Clients</fullName>
+                <default>false</default>
+                <label>Clients</label>
+            </value>
+            <value>
+                <fullName>Internal</fullName>
+                <default>false</default>
+                <label>Internal</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

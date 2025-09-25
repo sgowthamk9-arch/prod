@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Group of permissions for users who manage and create Client Accounts and Contacts.JIRA:387</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Manage Create Client Accounts</label>
+    <status>Updated</status>
+</PermissionSetGroup>

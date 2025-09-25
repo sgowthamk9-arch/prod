@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "6d12b74b-ccef-493a-a331-d71e485ea685",
+  "appPageId" : "009dd51a-6ab1-4381-8505-1a0631cdad2c",
+  "configurationTags" : [ ],
+  "devName" : "Information_Request_List__c",
+  "id" : "7ca481f5-b51c-4b9f-b697-562fb1cfd29d",
+  "label" : "Information Request List",
+  "objectApiName" : "Information_Request__c",
+  "routeType" : "list-a0G",
+  "type" : "route",
+  "urlPrefix" : "information-request"
+}

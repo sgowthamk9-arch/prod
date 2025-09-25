@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Services_Offered__c</fullName>
+    <label>Services Offered</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Individual Tax</fullName>
+                <default>false</default>
+                <label>Individual Tax</label>
+            </value>
+            <value>
+                <fullName>Social Security</fullName>
+                <default>false</default>
+                <label>Social Security</label>
+            </value>
+            <value>
+                <fullName>Employment Tax</fullName>
+                <default>false</default>
+                <label>Employment Tax</label>
+            </value>
+            <value>
+                <fullName>Calculate Payroll</fullName>
+                <default>false</default>
+                <label>Calculate Payroll</label>
+            </value>
+            <value>
+                <fullName>Deliver Payroll</fullName>
+                <default>false</default>
+                <label>Deliver Payroll</label>
+            </value>
+            <value>
+                <fullName>Permanent Establishment</fullName>
+                <default>false</default>
+                <label>Permanent Establishment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

@@ -1,0 +1,38 @@
+{
+  "appPageId" : "009dd51a-6ab1-4381-8505-1a0631cdad2c",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "36ee0c6e-8328-41af-a091-eff43fe324ea",
+  "label" : "User Profile",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "id" : "{!recordId}",
+        "profileTabLabel" : "Profile",
+        "richTextValue" : "<p><img class=\"sfdcCbImage\" src=\"{!contentAsset.Hero_image_test1.1}\" alt=\"\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.Hero_Image_Final1.1}\"><img class=\"sfdcCbImage\" alt=\"Banner image at the top of the page\" src=\"/sfsites/c/img/community/cpt/cpt-profile-banner.png\"></p>",
+        "settingsTabLabel" : "Settings & Preferences",
+        "showBannerImage" : true,
+        "showSettingsTab" : true
+      },
+      "componentName" : "forceCommunity:userProfileWithBanner",
+      "id" : "2fb51f02-c830-4e28-aa00-1291cf324c33",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "02f80992-62d7-4f7f-bd1c-ccd7811a5403",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "4297b39a-ed6e-47db-9466-bbf066cd1146",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "0c6e7365-d96f-477a-83dc-1dce82468239",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-005"
+}

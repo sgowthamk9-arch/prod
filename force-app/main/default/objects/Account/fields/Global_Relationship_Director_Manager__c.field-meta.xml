@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Global_Relationship_Director_Manager__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Global Relationship Director/Manager</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Accounts1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

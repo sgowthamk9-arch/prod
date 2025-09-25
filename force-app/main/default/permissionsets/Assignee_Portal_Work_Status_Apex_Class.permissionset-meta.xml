@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <classAccesses>
+        <apexClass>WorkRecordStatusController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <description>Assignee Portal Work Status Apex Class</description>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Engagement__c.Client__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Engagement__c.Global_Relationship_Director_Manager__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Engagement__c.Global_Relationship_Partner__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Assignee Portal Work Status Apex Class</label>
+</PermissionSet>

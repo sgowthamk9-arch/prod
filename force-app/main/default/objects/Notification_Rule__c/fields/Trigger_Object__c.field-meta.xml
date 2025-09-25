@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Trigger_Object__c</fullName>
+    <label>Trigger Object</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Account</fullName>
+                <default>false</default>
+                <label>Account</label>
+            </value>
+            <value>
+                <fullName>Contact</fullName>
+                <default>false</default>
+                <label>Contact</label>
+            </value>
+            <value>
+                <fullName>Engagement__c</fullName>
+                <default>false</default>
+                <label>Engagement</label>
+            </value>
+            <value>
+                <fullName>Information_Request__c</fullName>
+                <default>false</default>
+                <label>Information Request</label>
+            </value>
+            <value>
+                <fullName>ace_File__c</fullName>
+                <default>false</default>
+                <label>Shared File</label>
+            </value>
+            <value>
+                <fullName>User</fullName>
+                <default>false</default>
+                <label>User</label>
+            </value>
+            <value>
+                <fullName>Work_Authorization__c</fullName>
+                <default>false</default>
+                <label>Work Authorization</label>
+            </value>
+            <value>
+                <fullName>Work_Record__c</fullName>
+                <default>false</default>
+                <label>Work Record</label>
+            </value>
+            <value>
+                <fullName>Consent__c</fullName>
+                <default>false</default>
+                <label>Consent</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

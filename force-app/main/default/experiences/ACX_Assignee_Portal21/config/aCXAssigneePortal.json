@@ -1,0 +1,24 @@
+{
+  "forgotPasswordRouteId" : "3351e28d-4462-443a-91db-cf5556f0583b",
+  "isAvailableToGuests" : false,
+  "isFilteredComponentsView" : false,
+  "isProgressiveRenderingEnabled" : true,
+  "loginAppPageId" : "823594d2-a4d1-412b-adaf-95f1abdca22f",
+  "mainAppPageId" : "b23cfbb9-a656-486f-81c0-1ccb6f576a09",
+  "preferredDomain" : "none",
+  "selfRegistrationRouteId" : "853314dd-21d9-45d6-b522-33cb40f65079",
+  "trustedSitesForScript" : [ {
+    "id" : "18fee1b5-e20f-4172-8ccf-cc0ad09b3836",
+    "isActive" : true,
+    "trustedSiteName" : "CookieBot",
+    "trustedSiteUrl" : "https://consent.cookiebot.com",
+    "type" : "trustedSitesForScripts"
+  }, {
+    "id" : "47e3c215-33fb-4a65-8ade-e2c57e5e0134",
+    "isActive" : true,
+    "trustedSiteName" : "CookeBot CDN",
+    "trustedSiteUrl" : "https://consentcdn.cookiebot.com",
+    "type" : "trustedSitesForScripts"
+  } ],
+  "type" : "site"
+}

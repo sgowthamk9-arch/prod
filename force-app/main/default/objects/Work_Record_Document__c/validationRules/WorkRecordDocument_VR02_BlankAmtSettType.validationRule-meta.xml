@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WorkRecordDocument_VR02_BlankAmtSettType</fullName>
+    <active>true</active>
+    <description>JIRA:AGMPB-859</description>
+    <errorConditionFormula>AND(
+    $CustomMetadata.DisableAutomation__mdt.Work_Record_Document.IsActiveValidationRule__c = true,
+    ISPICKVAL( Type__c , &quot;FBAR&quot;),
+    OR(
+        NOT(ISBLANK( Amount__c )), 
+        NOT(ISPICKVAL( Settlement_Type__c , &quot;&quot;))
+    )
+)
+</errorConditionFormula>
+    <errorMessage>WorkRecordDocument_VR02: If Type is &apos;FBAR&apos;, then Amount and Settlement Type must be blank.</errorMessage>
+</ValidationRule>

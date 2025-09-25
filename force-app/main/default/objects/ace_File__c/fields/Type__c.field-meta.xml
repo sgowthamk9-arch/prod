@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <label>Type</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Origin__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Assignment Letter</fullName>
+                <default>false</default>
+                <label>Assignment Letter</label>
+            </value>
+            <value>
+                <fullName>Authorization List</fullName>
+                <default>false</default>
+                <label>Authorization List</label>
+            </value>
+            <value>
+                <fullName>Certificate of Coverage</fullName>
+                <default>false</default>
+                <label>Certificate of Coverage</label>
+            </value>
+            <value>
+                <fullName>Consultation Summary</fullName>
+                <default>false</default>
+                <label>Consultation Summary</label>
+            </value>
+            <value>
+                <fullName>Cover Letter</fullName>
+                <default>false</default>
+                <label>Cover Letter</label>
+            </value>
+            <value>
+                <fullName>Federal Tax Return</fullName>
+                <default>false</default>
+                <label>Federal Tax Return</label>
+            </value>
+            <value>
+                <fullName>Payroll</fullName>
+                <default>false</default>
+                <label>Payroll</label>
+            </value>
+            <value>
+                <fullName>Posted Worker Directive</fullName>
+                <default>false</default>
+                <label>Posted Worker Directive</label>
+            </value>
+            <value>
+                <fullName>Questionnaire</fullName>
+                <default>false</default>
+                <label>Questionnaire</label>
+            </value>
+            <value>
+                <fullName>State/Provincial Tax Return</fullName>
+                <default>false</default>
+                <label>State/Provincial Tax Return</label>
+            </value>
+            <value>
+                <fullName>Supporting document</fullName>
+                <default>false</default>
+                <label>Supporting document</label>
+            </value>
+            <value>
+                <fullName>Tax Equalization</fullName>
+                <default>false</default>
+                <label>Tax Equalization</label>
+            </value>
+            <value>
+                <fullName>Tax Notice</fullName>
+                <default>false</default>
+                <label>Tax Notice</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Tax Payment</fullName>
+                <default>false</default>
+                <label>Tax Payment</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Andersen</controllingFieldValue>
+            <controllingFieldValue>Client</controllingFieldValue>
+            <valueName>Assignment Letter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Andersen</controllingFieldValue>
+            <controllingFieldValue>Client</controllingFieldValue>
+            <valueName>Authorization List</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Andersen</controllingFieldValue>
+            <controllingFieldValue>Client</controllingFieldValue>
+            <valueName>Certificate of Coverage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Andersen</controllingFieldValue>
+            <controllingFieldValue>Individual</controllingFieldValue>
+            <valueName>Consultation Summary</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Andersen</controllingFieldValue>
+            <controllingFieldValue>Individual</controllingFieldValue>
+            <valueName>Cover Letter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Andersen</controllingFieldValue>
+            <controllingFieldValue>Client</controllingFieldValue>
+            <controllingFieldValue>Individual</controllingFieldValue>
+            <valueName>Federal Tax Return</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Andersen</controllingFieldValue>
+            <controllingFieldValue>Client</controllingFieldValue>
+            <valueName>Payroll</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Andersen</controllingFieldValue>
+            <controllingFieldValue>Client</controllingFieldValue>
+            <valueName>Posted Worker Directive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Andersen</controllingFieldValue>
+            <valueName>Questionnaire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Andersen</controllingFieldValue>
+            <controllingFieldValue>Client</controllingFieldValue>
+            <controllingFieldValue>Individual</controllingFieldValue>
+            <valueName>State/Provincial Tax Return</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Andersen</controllingFieldValue>
+            <controllingFieldValue>Individual</controllingFieldValue>
+            <valueName>Supporting document</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Andersen</controllingFieldValue>
+            <controllingFieldValue>Client</controllingFieldValue>
+            <controllingFieldValue>Individual</controllingFieldValue>
+            <valueName>Tax Equalization</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Andersen</controllingFieldValue>
+            <controllingFieldValue>Individual</controllingFieldValue>
+            <valueName>Tax Notice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Andersen</controllingFieldValue>
+            <controllingFieldValue>Client</controllingFieldValue>
+            <controllingFieldValue>Individual</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Andersen</controllingFieldValue>
+            <controllingFieldValue>Client</controllingFieldValue>
+            <controllingFieldValue>Individual</controllingFieldValue>
+            <valueName>Tax Payment</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

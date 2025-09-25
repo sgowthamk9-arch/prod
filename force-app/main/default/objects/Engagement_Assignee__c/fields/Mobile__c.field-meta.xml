@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mobile__c</fullName>
+    <description>This field retrieves the Mobile  from the Account when the Account allows or shares the Mobile with the employee.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+    
+    Assignee__r.Share_Mobile_with_Employer__c ,
+    Assignee__r.PersonContact.MobilePhone ,
+   &quot;Information is not shared&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Mobile</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

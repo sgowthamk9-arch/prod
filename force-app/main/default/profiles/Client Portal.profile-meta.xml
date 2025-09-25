@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Profile xmlns="http://soap.sforce.com/2006/04/metadata">
+    <custom>true</custom>
+    <layoutAssignments>
+        <layout>Account-Account Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Account-Account Layout</layout>
+        <recordType>Account.Client</recordType>
+    </layoutAssignments>
+    <!--layoutAssignments>
+        <layout>Account-Affiliate Account</layout>
+        <recordType>Account.Affiliate</recordType>
+    </layoutAssignments-->
+    <layoutAssignments>
+        <layout>Consent_Form__c-Consent Form Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Consent__c-Consent Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contact-Client Contact Layout</layout>
+        <recordType>Contact.Client_Contact</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contact-Contact Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contact-Contact Layout</layout>
+        <recordType>Contact.Business_Contact</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Contact-Staff Profile Layout</layout>
+        <recordType>Contact.Staff</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Engagement_Assignee__c-Client Portal Engagement Assignee Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Engagement_Line_Item__c-Engagement Line Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Engagement__c-Client Portal Engagement Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Information_Request__c-Information Request Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PersonAccount-Person Account Layout</layout>
+        <recordType>PersonAccount.Individual</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PersonAccount-Person Account Layout</layout>
+        <recordType>PersonAccount.PersonAccount</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>User-User Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>UserAlt-Client Portal Profile Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Work_Authorization__c-Client Portal Work Authorization</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Work_Authorization__c-Client Portal Work Authorization</layout>
+        <recordType>Work_Authorization__c.In_Scope</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Work_Authorization__c-Client Portal Work Authorization</layout>
+        <recordType>Work_Authorization__c.Out_of_Scope</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Work_Record_Document__c-Work Record Document Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Work_Record__c-Client Portal Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Work_Record__c-Client Portal Layout</layout>
+        <recordType>Work_Record__c.Engagement_Level</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Work_Record__c-Client Portal Layout</layout>
+        <recordType>Work_Record__c.Certificate_of_Coverage</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Work_Record__c-Client Portal Layout</layout>
+        <recordType>Work_Record__c.Consultation</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Work_Record__c-Client Portal Layout</layout>
+        <recordType>Work_Record__c.Other</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Work_Record__c-Client Portal Layout</layout>
+        <recordType>Work_Record__c.Tax_Return</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ace_File__c-Client Portal File Layout</layout>
+    </layoutAssignments>
+    <loginFlows>
+        <flow>CP_Client_Login_Screen_Flow</flow>
+        <flowType>UI</flowType>
+        <friendlyName>Client Login Flow</friendlyName>
+        <uiLoginFlowType>VisualWorkflow</uiLoginFlowType>
+        <useLightningRuntime>true</useLightningRuntime>
+    </loginFlows>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Work_Record__c.Engagement_Level</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <!--recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Account.Affiliate</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities-->
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>Account.Client</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Contact.Client_Contact</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Contact.Staff</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>PersonAccount.Individual</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Work_Authorization__c.In_Scope</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Work_Authorization__c.Out_of_Scope</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Work_Record__c.Certificate_of_Coverage</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Work_Record__c.Consultation</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Work_Record__c.Other</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Work_Record__c.Tax_Return</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <userLicense>Customer Community Plus</userLicense>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>EnableNotifications</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ExportReport</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>RunReports</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>SelectFilesFromSalesforce</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ShareFilesWithNetworks</name>
+    </userPermissions>
+</Profile>

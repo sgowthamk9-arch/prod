@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "2e55d09c-f678-4322-a32e-e59654b2aadc",
+  "appPageId" : "b23cfbb9-a656-486f-81c0-1ccb6f576a09",
+  "configurationTags" : [ ],
+  "devName" : "Work_Record_List__c",
+  "id" : "822055a5-7e95-4c4f-b0e7-5dad993d2c00",
+  "label" : "Work Record List",
+  "objectApiName" : "Work_Record__c",
+  "routeType" : "list-a0P",
+  "type" : "route",
+  "urlPrefix" : "work-record"
+}

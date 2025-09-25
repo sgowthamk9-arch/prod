@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Content__c</fullName>
+    <description>The content of the notification. This could be populated from the Email_Template__c or In_App_Notification_Template__c on the Notification_Rule__c, with merge fields resolved.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <label>Content</label>
+    <length>32768</length>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>25</visibleLines>
+</CustomField>

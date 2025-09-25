@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Milestone_for_Client__c</fullName>
+    <label>Service Status</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Milestone__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Gathering Documents</fullName>
+                <default>false</default>
+                <label>Gathering Documents</label>
+            </value>
+            <value>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+                <label>In Progress</label>
+            </value>
+            <value>
+                <fullName>Ready for Review</fullName>
+                <default>false</default>
+                <label>Ready for Review</label>
+            </value>
+            <value>
+                <fullName>Submitted</fullName>
+                <default>false</default>
+                <label>Submitted</label>
+            </value>
+            <value>
+                <fullName>Ready to Schedule</fullName>
+                <default>false</default>
+                <label>Ready to Schedule</label>
+            </value>
+            <value>
+                <fullName>Scheduled</fullName>
+                <default>false</default>
+                <label>Scheduled</label>
+            </value>
+            <value>
+                <fullName>Post Consultation</fullName>
+                <default>false</default>
+                <label>Post Consultation</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Scheduled</controllingFieldValue>
+            <valueName>Scheduled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Post Consultation</controllingFieldValue>
+            <valueName>Post Consultation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Data Validation</controllingFieldValue>
+            <controllingFieldValue>Data Collection</controllingFieldValue>
+            <controllingFieldValue>Initial Review</controllingFieldValue>
+            <controllingFieldValue>Preparation</controllingFieldValue>
+            <controllingFieldValue>Review</controllingFieldValue>
+            <controllingFieldValue>Signing</controllingFieldValue>
+            <valueName>In Progress</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Record Completed</controllingFieldValue>
+            <valueName>Completed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Record Created</controllingFieldValue>
+            <valueName>Gathering Documents</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Assignee Review</controllingFieldValue>
+            <valueName>Ready for Review</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Filing</controllingFieldValue>
+            <valueName>Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Awaiting Scheduling</controllingFieldValue>
+            <valueName>Ready to Schedule</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

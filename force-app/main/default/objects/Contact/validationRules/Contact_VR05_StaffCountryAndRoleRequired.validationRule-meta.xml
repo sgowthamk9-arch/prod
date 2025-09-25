@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_VR05_StaffCountryAndRoleRequired</fullName>
+    <active>true</active>
+    <description>JIRA:AGMPB-812</description>
+    <errorConditionFormula>AND(
+    $RecordType.Name = &apos;Staff&apos;,
+    OR(
+        ISBLANK( Country_Supports__c ),
+        ISBLANK( Role__c )
+    )
+)</errorConditionFormula>
+    <errorMessage>Contact VR05: Country (Supports) and Role fields must be populated when Record Type is &apos;Staff&apos;.</errorMessage>
+</ValidationRule>

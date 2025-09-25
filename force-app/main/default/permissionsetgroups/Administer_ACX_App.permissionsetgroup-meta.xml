@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Permission set group to manage visibility of Consents, Accounts, and Contacts</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Administer ACX App</label>
+    <permissionSets>Administer_Client_Accounts</permissionSets>
+    <permissionSets>Administer_Client_Contacts</permissionSets>
+    <permissionSets>Administer_Consents</permissionSets>
+    <permissionSets>Administer_Firm_Accounts</permissionSets>
+    <permissionSets>Administer_Staff_Contacts</permissionSets>
+    <permissionSets>Administer_Vendor_Accounts</permissionSets>
+    <permissionSets>Bulk_Load_Records</permissionSets>
+    <permissionSets>Engagement_ManageEngagementParties</permissionSets>
+    <permissionSets>Engagement_ManageSubscribedOffices</permissionSets>
+    <permissionSets>InternalUser_ApexClass</permissionSets>
+    <permissionSets>Manage_Ace_File</permissionSets>
+    <permissionSets>Manage_Consents</permissionSets>
+    <permissionSets>Manage_Engagements</permissionSets>
+    <permissionSets>Manage_Firm_Accounts</permissionSets>
+    <permissionSets>Manage_Individual_User</permissionSets>
+    <permissionSets>Manage_Internal_Users</permissionSets>
+    <permissionSets>Manage_Staff_Contacts</permissionSets>
+    <permissionSets>Mobile_Employee_Management</permissionSets>
+    <status>Outdated</status>
+</PermissionSetGroup>

@@ -1,0 +1,44 @@
+{
+  "appPageId" : "b23cfbb9-a656-486f-81c0-1ccb6f576a09",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "bace45ab-4dfa-4c22-bb4c-c29063a0fcbb",
+  "label" : "User Profile",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "id" : "{!recordId}",
+        "showFullPhotoAsCircle" : true,
+        "showReputation" : false
+      },
+      "componentName" : "forceCommunity:userProfileHeader",
+      "id" : "98d6fa4a-1935-4956-a70c-7affc91ab5bf",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordDetail",
+      "id" : "8e2e3a4a-9da8-4787-8928-b770f917e722",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "5ed56c81-9b7a-4256-87e9-129fd3cbc70c",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "09690dcb-bd0f-4f4e-971f-e778568b9999",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "197b9722-6219-446a-b2e8-d839a00e50d8",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-005"
+}

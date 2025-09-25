@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>JIRA:AGMPB-384</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Manage Client Users</label>
+    <permissionSets>Create_Client_Contacts</permissionSets>
+    <permissionSets>Create_Consents</permissionSets>
+    <permissionSets>Manage_Internal_Users</permissionSets>
+    <permissionSets>View_Account_Records</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

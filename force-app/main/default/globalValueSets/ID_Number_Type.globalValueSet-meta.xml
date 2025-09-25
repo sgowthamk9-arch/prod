@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>SSN</fullName>
+        <default>false</default>
+        <label>SSN</label>
+    </customValue>
+    <customValue>
+        <fullName>ITIN</fullName>
+        <default>false</default>
+        <label>ITIN</label>
+    </customValue>
+    <masterLabel>ID Number Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

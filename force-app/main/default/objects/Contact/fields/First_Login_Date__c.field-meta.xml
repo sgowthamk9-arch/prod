@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>First_Login_Date__c</fullName>
+    <description>Displays the date and time the staff user logged into the system. Automatically populated from the linked User record for monitoring system acces.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <label>First Login Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>DateTime</type>
+</CustomField>

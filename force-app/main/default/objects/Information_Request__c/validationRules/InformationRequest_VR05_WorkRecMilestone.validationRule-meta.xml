@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InformationRequest_VR05_WorkRecMilestone</fullName>
+    <active>true</active>
+    <description>JIRA:AGMPB-786</description>
+    <errorConditionFormula>AND(
+    ISPICKVAL( Type__c , &quot;Review Tax Return&quot;),
+    ISPICKVAL( Assigned_To__c , &quot;Mobile Employee&quot;),
+    ISPICKVAL( Status__c , &quot;Action Required&quot;),
+    TEXT( Work_Record__r.Milestone__c) &lt;&gt; &quot;Assignee Review&quot;
+)</errorConditionFormula>
+    <errorMessage>InformationRequest_VR05: The related work record must have the milestone of &apos;Assignee Review&apos; before the information request can be created.</errorMessage>
+</ValidationRule>

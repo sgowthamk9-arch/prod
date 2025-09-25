@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Phone__c</fullName>
+    <description>This field retrieves the phone number from the Account when the Account allows or shares the phone number with the employee.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+    Assignee__r.Share_Phone_with_Employer__c ,
+    Assignee__r.Phone ,
+   &quot;Information is not shared&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Phone</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

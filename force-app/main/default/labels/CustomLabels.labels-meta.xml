@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>ACX_Assignee_Portal</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACX Assignee Portal</shortDescription>
+        <value>https://andersengm--dev.sandbox.my.site.com/ACXAssignee/secur/logout.jsp</value>
+    </labels>
+    <labels>
+        <fullName>ACX_Client_Portal</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACX Client Portal</shortDescription>
+        <value>https://andersengm--dev.sandbox.my.site.com/ACXClient/secur/logout.jsp</value>
+    </labels>
+    <labels>
+        <fullName>Account_Deactivation_Failure</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account_Deactivation_Failure</shortDescription>
+        <value>Account cannot be deactivated due to active dependencies.</value>
+    </labels>   
+    <labels>
+        <fullName>Active_Contacts_Exist</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Active_Contacts_Exist</shortDescription>
+        <value>There are active Client Contacts under this account.</value>
+    </labels>
+    <labels>
+        <fullName>Active_Users_Exist</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Active_Users_Exist</shortDescription>
+        <value>Some users linked to contacts are still active.</value>
+    </labels>
+    <labels>
+        <fullName>Andersen_Logo_URL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Andersen_Logo_URL</shortDescription>
+        <value>https://www.andersen.com/img/logo.png</value>
+    </labels>
+    <labels>
+        <fullName>Assignee_Portal_My_Files</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Assignee Portal My Files</shortDescription>
+        <value>My Files</value>
+    </labels>
+    <labels>
+        <fullName>Assignee_Portal_Shared_with_Me</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Assignee Portal Shared with Me</shortDescription>
+        <value>Shared with Me</value>
+    </labels>
+    <labels>
+        <fullName>BannerBackgroundImage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BannerBackgroundImage</shortDescription>
+        <value>test</value>
+    </labels>
+    <labels>
+        <fullName>Can_Deactivate</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Can_Deactivate</shortDescription>
+        <value>Deactivating all dependencies may take up to 2 minutes. Please wait for the update to complete.</value>
+    </labels>
+    <labels>
+        <fullName>ClientDocumentCenter</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ClientDocumentCenter</shortDescription>
+        <value>My Files</value>
+    </labels>
+    <labels>
+        <fullName>ContactHeaderLabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ace_contactUserTabelLWC_AssigneeConsultationContact</shortDescription>
+        <value>Your {0} Consultation Contact</value>
+    </labels>
+    <labels>
+        <fullName>ElectronicFiling</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ElectronicFiling</shortDescription>
+        <value>Set up for Electronic Filing</value>
+    </labels>
+    <labels>
+        <fullName>LoginFlow_ConsentRejected</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LoginFlow_ConsentRejected</shortDescription>
+        <value>You cannot enter the ACX app without consenting the terms and conditions.  Please contact your Andersen contact for more information.</value>
+    </labels>
+    <labels>
+        <fullName>Login_URL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Salesforce_URL</shortDescription>
+        <value>https://test.salesforce.com</value>
+    </labels>
+    <labels>
+        <fullName>Net_Amount_In_Pocket</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Net Amount In Pocket</shortDescription>
+        <value>Net Amount In Pocket</value>
+    </labels>
+    <labels>
+        <fullName>Net_Amount_Out_Of_Pocket</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Net Amount Out Of Pocket</shortDescription>
+        <value>Net Amount Out-Of-Pocket</value>
+    </labels>
+    <labels>
+        <fullName>PageFiling</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PageFiling</shortDescription>
+        <value>Set up for Paper Filing</value>
+    </labels>
+    <labels>
+        <fullName>PaymentTypeText</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Payment Type Text</shortDescription>
+        <value>Requires Payment From You</value>
+    </labels>
+    <labels>
+        <fullName>RefundTypeText</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Refund Type Text</shortDescription>
+        <value>Refund Sent to You</value>
+    </labels>
+    <labels>
+        <fullName>Salesforce_Base_URL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Salesforce_Base_URL</shortDescription>
+        <value>https://andersengm--dev.sandbox.my.salesforce.com</value>
+    </labels>
+    <labels>
+        <fullName>TA_Exceeds_Shared_File_Upload_Limit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TA_Exceeds_Shared_File_Upload_Limit</shortDescription>
+        <value>Upload failed: only a single file can be attached to a shared ace_File</value>
+    </labels>
+    <labels>
+        <fullName>ace_ContactCardLwc_AssigneeConsultationContact</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ace_ContactCardLwc_AssigneeConsultationContact</shortDescription>
+        <value>Your {0} Consultation Contact</value>
+    </labels>
+    <labels>
+        <fullName>ace_Equalization_Amount_Due</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ace Equalization Amount Due</shortDescription>
+        <value>Payment due to your employer</value>
+    </labels>
+    <labels>
+        <fullName>ace_Equalization_Amount_Owed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ace Equalization Amount Owed</shortDescription>
+        <value>Refund from your employer</value>
+    </labels>
+    <labels>
+        <fullName>ace_GlobalUserMapLegend</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ace_GlobalUserMapLegend</shortDescription>
+        <value>Mobile Employee</value>
+    </labels>
+    <labels>
+        <fullName>ace_GlobalUserMapTooltip</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ace_GlobalUserMapTooltip</shortDescription>
+        <value>Mobile Employees</value>
+    </labels>
+    <labels>
+        <fullName>ace_TaxBreakdownPositionSummary_Header</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ace_TaxBreakdownPositionSummary_Header</shortDescription>
+        <value>Understanding Your Tax Outcome</value>
+    </labels>
+    <labels>
+        <fullName>ace_TaxBreakdownPositionSummary_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ace_TaxBreakdownPositionSummary_Message</shortDescription>
+        <value>Message from your Andersen contact:</value>
+    </labels>
+    <labels>
+        <fullName>ace_TaxBreakdownPositionSummary_WRS</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ace_TaxBreakdownPositionSummary_WRS</shortDescription>
+        <value>{0}</value>
+    </labels>
+    <labels>
+        <fullName>ace_TaxReturnBanner_Heading</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ace_TaxReturnBanner_Heading</shortDescription>
+        <value>Your {0} is ready.</value>
+    </labels>
+    <labels>
+        <fullName>ace_TaxReturnBanner_SubHeading</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ace_TaxReturnBanner_SubHeading</shortDescription>
+        <value>Good News,  {0}!</value>
+    </labels>
+    <labels>
+        <fullName>ace_TaxReturnFooter_Label</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ace_TaxReturnFooter_Label</shortDescription>
+        <value>Let&#39;s download your returns and continue.</value>
+    </labels>
+    <labels>
+        <fullName>ace_TaxReturnbanner_Text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ace_TaxReturnbanner_Text</shortDescription>
+        <value>We’ve broken everything down so you can easily review your return, understand your position, and file with confidence. Start by reviewing your tax return breakdown then we’ll take you through the steps needed to file.
+If you have any questions, your Andersen contact is here to help.</value>
+    </labels>
+    <labels>
+        <fullName>ace_contactUserTabelLWC_AssigneeCertificateofCoverageContact</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ace_contactUserTabelLWC_AssigneeCertificateofCoverageContact</shortDescription>
+        <value>Your {0} Certificate of Coverage Contact</value>
+    </labels>
+    <labels>
+        <fullName>ace_contactUserTabelLWC_AssigneeConsultationContact</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ace_contactUserTabelLWC_AssigneeConsultationContact</shortDescription>
+        <value>Your {0} Consultation Contact</value>
+    </labels>
+    <labels>
+        <fullName>ace_contactUserTabelLWC_AssigneeContentAsset</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ace_contactUserTabelLWC_AssigneeContentAsset</shortDescription>
+        <value>White_Andersen_logopng</value>
+    </labels>
+    <labels>
+        <fullName>ace_contactUserTabelLWC_AssigneeOtherContact</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ace_contactUserTabelLWC_AssigneeOtherContact</shortDescription>
+        <value>Your {0} Other Contact</value>
+    </labels>
+    <labels>
+        <fullName>ace_contactUserTabelLWC_AssigneeTaxReturnContact</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ace_contactUserTabelLWC_AssigneeTaxReturnContact</shortDescription>
+        <value>Your {0} Tax Return Contact</value>
+    </labels>
+    <labels>
+        <fullName>acx_EmailFooterCopyDisclaimer</fullName>
+        <categories>portal, emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_EmailFooterCopyDisclaimer</shortDescription>
+        <value>©Andersen Tax LLC. Andersen Tax LLC is a U.S. member firm of Andersen Global, a Swiss verein comprised of legally separate, independent member firms located throughout the world providing services under their own name or the brand &quot;Andersen Tax&quot; or &quot;Andersen Tax &amp; Legal,&quot; or &quot;Andersen Legal.&quot; Andersen Global does not provide any services and has no responsibility for any actions of the member firms, and the member firms have no responsibility for any actions of Andersen Global. Your use of this website is subject to the terms and conditions governing it. Please read these terms and conditions before using the website.</value>
+    </labels>
+    <labels>
+        <fullName>acx_Email_Closing_Salutation</fullName>
+        <categories>portal, emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_Email_Closing_Salutation</shortDescription>
+        <value>Your Team at Andersen</value>
+    </labels>
+    <labels>
+        <fullName>acx_Portal_EmailChangeConfirmation_Email_BodyText1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_Portal_EmailChangeConfirmation_Email_BodyText1</shortDescription>
+        <value>Thank you for confirming your email address change. We’ve updated your account email from {OldEmail} to {NewEmail}.
+{BR}{BR}
+We&#39;ll use your new email to contact you going forward.</value>
+    </labels>
+    <labels>
+        <fullName>acx_Portal_EmailChangeConfirmation_Email_BodyText2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_Portal_EmailChangeConfirmation_Email_BodyText2</shortDescription>
+        <value>If you didn’t request this change, please reach out to acx-support@andersen.com.</value>
+    </labels>
+    <labels>
+        <fullName>acx_Portal_EmailChangeConfirmation_Email_Large_Title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_Portal_EmailChangeConfirmation_Email_Large_Title</shortDescription>
+        <value>Your email address has been updated</value>
+    </labels>
+    <labels>
+        <fullName>acx_Portal_EmailChangeConfirmation_Email_Subject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_Portal_EmailChangeConfirmation_Email_Subject</shortDescription>
+        <value>Your {PortalName} email address change is confirmed</value>
+    </labels>
+    <labels>
+        <fullName>acx_Portal_EmailChangeVerification_Email_CTA</fullName>
+        <categories>portal, emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_Portal_EmailChangeVerification_Email_CTA</shortDescription>
+        <value>Confirm new email</value>
+    </labels>
+    <labels>
+        <fullName>acx_Portal_EmailChangeVerification_Email_Large_Title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_Portal_EmailChangeVerification_Email_Large_Title</shortDescription>
+        <value>Click to confirm your new email</value>
+    </labels>
+    <labels>
+        <fullName>acx_Portal_EmailChangeVerification_Email_Subject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_Portal_EmailChangeVerification_Email_Subject</shortDescription>
+        <value>Verify your new {PortalName} account email address</value>
+    </labels>
+    <labels>
+        <fullName>acx_Portal_Forgot_Password_Email_BodyText1</fullName>
+        <categories>portal, emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_Portal_Forgot_Password_Email_BodyText1</shortDescription>
+        <value>We received your request to reset your password. Click the link below to create a new password.</value>
+    </labels>
+    <labels>
+        <fullName>acx_Portal_Forgot_Password_Email_BodyText2</fullName>
+        <categories>portal, emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_Portal_Forgot_Password_Email_BodyText2</shortDescription>
+        <value>If you didn’t request a password reset, you can safely ignore this email. Your password will not be changed.</value>
+    </labels>
+    <labels>
+        <fullName>acx_Portal_Forgot_Password_Email_CTA</fullName>
+        <categories>portal, emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_Portal_Forgot_Password_Email_CTA</shortDescription>
+        <value>Reset my password</value>
+    </labels>
+    <labels>
+        <fullName>acx_Portal_Forgot_Password_Email_Large_Title</fullName>
+        <categories>portal, emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_Portal_Forgot_Password_Email_Large_Title</shortDescription>
+        <value>Reset your {PortalName} password</value>
+    </labels>
+    <labels>
+        <fullName>acx_Portal_Forgot_Password_Email_Subject</fullName>
+        <categories>portal, emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_Portal_Forgot_Password_Email_Subject</shortDescription>
+        <value>Login to reset your {PortalName} password</value>
+    </labels>
+    <labels>
+        <fullName>acx_Portal_Lockout_Email_BodyText</fullName>
+        <categories>portal, emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_Portal_Lockout_Email_BodyText1</shortDescription>
+        <value>We noticed multiple invalid login attempts and password reset requests on your account. As a security precaution, we’ve locked your account for {Password_Lock_Time} minutes to ensure the safety of your information. 
+{BR}{BR}
+If this was you, go to {Community_URL} to reset your password and unlock your account.</value>
+    </labels>
+    <labels>
+        <fullName>acx_Portal_Lockout_Email_BodyText1_AdminLock</fullName>
+        <categories>portal, emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_Portal_Lockout_Email_BodyText1_AdminLock</shortDescription>
+        <value>We noticed multiple invalid login attempts and password reset requests on your account. As a security precaution, we’ve locked your account to ensure the safety of your information. 
+{BR}{BR}
+Please contact us acx-support@andersen.com to regain access to your account.</value>
+    </labels>
+    <labels>
+        <fullName>acx_Portal_Lockout_Email_BodyText2</fullName>
+        <categories>portal, emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_Portal_Lockout_Email_BodyText2</shortDescription>
+        <value>If this was not you, please contact us immediately at acx-support@andersen.com.</value>
+    </labels>
+    <labels>
+        <fullName>acx_Portal_Lockout_Email_CTA</fullName>
+        <categories>portal, emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_Portal_Lockout_Email_CTA</shortDescription>
+        <value>Reset password</value>
+    </labels>
+    <labels>
+        <fullName>acx_Portal_Lockout_Email_CTA_AdminLock</fullName>
+        <categories>portal, emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_Portal_Lockout_Email_CTA_AdminLock</shortDescription>
+        <value>Contact support</value>
+    </labels>
+    <labels>
+        <fullName>acx_Portal_Lockout_Email_Large_Title_AdminLock</fullName>
+        <categories>portal, emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_Portal_Lockout_Email_Large_Title_AdminLock</shortDescription>
+        <value>Your account has been locked</value>
+    </labels>
+    <labels>
+        <fullName>acx_Portal_Lockout_Email_Large_Title_TimeBased</fullName>
+        <categories>portal, emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_Portal_Lockout_Email_Large_Title_TimeBased</shortDescription>
+        <value>Your account has been locked for {Password_Lock_Time} minutes</value>
+    </labels>
+    <labels>
+        <fullName>acx_Portal_Lockout_Email_Subject</fullName>
+        <categories>portal, emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_Portal_Lockout_Email_Subject</shortDescription>
+        <value>Security Notice: Account locked</value>
+    </labels>
+    <labels>
+        <fullName>acx_Portal_SelfDestruct</fullName>
+        <categories>portal, emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_Portal_SelfDestruct</shortDescription>
+        <value>This link will self-destruct after 72 hours.</value>
+    </labels>
+    <labels>
+        <fullName>ap_LoginFlow_ConsentRejected</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ap_LoginFlow_ConsentRejected</shortDescription>
+        <value>You cannot enter the ACX app without consenting the terms and conditions.  Please contact your Andersen contact for more information.</value>
+    </labels>
+    <labels>
+        <fullName>cp_LoginFlow_ConsentRejected</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>cp_LoginFlow_ConsentRejected</shortDescription>
+        <value>You cannot enter the ACX app without consenting the terms and conditions.  Please contact your Andersen contact for more information.</value>
+    </labels>
+    <labels>
+        <fullName>acx_Portal_Welcome_Email_CTA</fullName>
+        <categories>portal, emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_Portal_Welcome_Email_CTA</shortDescription>
+        <value>Activate my ACX Account</value>
+    </labels>
+    <labels>
+        <fullName>acx_Portal_Welcome_Email_Large_Title</fullName>
+        <categories>portal, emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_Portal_Welcome_Email_Large_Title</shortDescription>
+        <value>Nice to meet you, {UserFirstName} {UserLastName}!</value>
+    </labels>
+    <labels>
+        <fullName>acx_Portal_Welcome_Email_Subject</fullName>
+        <categories>portal, emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_Portal_Welcome_Email_Subject</shortDescription>
+        <value>Welcome to Andersen, {UserFirstName}! Let’s set up your account.</value>
+    </labels>
+    <labels>
+        <fullName>acx_EmailFooterContactUs</fullName>
+        <categories>portal, emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_EmailFooterContactUs</shortDescription>
+        <value>You are receiving this email in associate with your Andersen Connected Experience (ACX) account. Need help? Reach out to acx-support@andersen.com or your dedicated tax contact.</value>
+    </labels>
+    <labels>
+        <fullName>acx_Portal_EmailChangeVerification_Email_BodyText1</fullName>
+        <categories>portal, emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_Portal_EmailChangeVerification_Email_BodyText1</shortDescription>
+        <value>Hi {UserFirstName},
+{BR}
+We received your request to change your email address from {OldEmail} to {NewEmail}. To help us keep your account secure, please click the link below to confirm this change.</value>
+    </labels>
+    <labels>
+        <fullName>acx_Portal_Welcome_Email_BodyText1</fullName>
+        <categories>portal, emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_Portal_Welcome_Email_BodyText1</shortDescription>
+        <value>You’re now part of a global community of world-class tax professionals here to support every step of your journey. The team at {ClientName} has authorized our Andersen team to provide tax services throughout your global mobility experience to {HostCountry}. 
+{BR}{BR}
+We’ll collaborate together through the Andersen Connected Experience (ACX) portal to get your taxes done right. We’re excited to have you here and can’t wait to connect. Let’s get started by setting up your account.</value>
+    </labels>
+    <labels>
+        <fullName>acx_Portal_Welcome_Email_BodyText2</fullName>
+        <categories>portal, emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_Portal_Welcome_Email_BodyText2</shortDescription>
+        <value>{b}What can ACX do for you:{/b}
+{BR}{BR}
+Through the Andersen Connected Experience (ACX), we’ll make your experience seamless as we complete your services. 
+{BR}
+{BR}✅ Get in touch with your Andersen team
+{BR}✅ Share &amp; view files
+{BR}✅ Check status of your services
+{BR}✅ Provide information needed for services
+{BR}✅ Schedule consultations in a few clicks
+{BR}✅ Review &amp; file your tax returns
+{BR}{BR}
+We&#39;re excited to be part of your global mobility journey. We’ll see you in ACX.</value>
+    </labels>
+    <labels>
+        <fullName>acx_Portal_PasswordChangeConfirmation_Email_BodyText1</fullName>
+        <categories>portal, emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_Portal_PasswordChangeConfirmation_Email_BodyText1</shortDescription>
+        <value>This email confirms that your password for {PortalName} has been successfully changed.
+{BR}{BR}
+If you did not make this change, please contact our support team immediately and secure your account.</value>
+    </labels>
+    <labels>
+        <fullName>acx_Portal_PasswordChangeConfirmation_Email_Large_Title</fullName>
+        <categories>portal, emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_Portal_PasswordChangeConfirmation_Email_Large_Title</shortDescription>
+        <value>Password Changed Successfully</value>
+    </labels>
+    <labels>
+        <fullName>acx_Portal_PasswordChangeConfirmation_Email_Subject</fullName>
+        <categories>portal, emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_Portal_PasswordChangeConfirmation_Email_Subject</shortDescription>
+        <value>Your {PortalName} password change is confirmed</value>
+    </labels>
+    <labels>
+        <fullName>acx_Portal_Welcome_Email_CP_BodyText1</fullName>
+        <categories>portal, emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_Portal_Welcome_Email_CP_BodyText1</shortDescription>
+        <value>Our team at Andersen is excited to be partnering with you and the rest of the team at {ClientName} to support your global mobility program. You now have easy access to powerful tools to manage your global assignments and streamline collaboration with Andersen. We&#39;re thrilled to introduce you to the Andersen Connected Experience (ACX). 
+{BR}{BR}
+ACX is designed to empower you in managing your global mobility services more effectively, enabling you to:
+{BR}{BR}
+✅ Initiate, authorize, and manage assignments and service requests{BR}
+✅ Track real time progress for your assignee population and their services{BR}
+✅ Collaborate and seamlessly share files with Andersen{BR}
+✅ Accurately track and action tax equalization settlements{BR}
+✅ Generate insightful program reports and analytics
+{BR}{BR}
+Let’s get started by setting up your account.</value>
+    </labels>
+    <labels>
+        <fullName>acx_Portal_Welcome_Email_CP_BodyText2</fullName>
+        <categories>portal, emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_Portal_Welcome_Email_CP_BodyText2</shortDescription>
+        <value>We&#39;re excited to be part of your global mobility journey. We’ll see you in ACX.</value>
+    </labels>
+    <labels>
+        <fullName>acx_Portal_Welcome_Email_CP_CTA</fullName>
+        <categories>portal, emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_Portal_Welcome_Email_CP_CTA</shortDescription>
+        <value>Activate my ACX account</value>
+    </labels>
+    <labels>
+        <fullName>acx_Portal_Welcome_Email_CP_Large_Title</fullName>
+        <categories>portal, emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_Portal_Welcome_Email_CP_Large_Title</shortDescription>
+        <value>Let’s get working on your mobility program, {UserFirstName}</value>
+    </labels>
+    <labels>
+        <fullName>acx_Portal_Welcome_Email_CP_Subject</fullName>
+        <categories>portal, emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_Portal_Welcome_Email_CP_Subject</shortDescription>
+        <value>Welcome to Andersen, {UserFirstName}! Let’s set up your ACX account.</value>
+    </labels>
+    <labels>
+        <fullName>flow_Label_Country</fullName>
+        <categories>Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>flow_Label_Country</shortDescription>
+        <value>Country</value>
+    </labels>
+    <labels>
+        <fullName>acx_EmailFooterContactUs</fullName>
+        <categories>portal, emails</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>acx_EmailFooterContactUs</shortDescription>
+        <value>You are receiving this email in associate with your Andersen Connected Experience (ACX) account. Need help? Reach out to acx-support@andersen.com or your dedicated tax contact.</value>
+    </labels>
+    <labels>
+        <fullName>flow_Label_CountryNotFound</fullName>
+        <categories>Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>flow_Label_CountryNotFound</shortDescription>
+        <value>Country Not Found</value>
+    </labels>
+    <labels>
+        <fullName>flow_Label_Description</fullName>
+        <categories>Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>flow_Label_Description</shortDescription>
+        <value>Description</value>
+    </labels>
+    <labels>
+        <fullName>flow_Label_FileName</fullName>
+        <categories>Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>flow_Label_FileName</shortDescription>
+        <value>File Name</value>
+    </labels>
+    <labels>
+        <fullName>flow_Label_InternalVisbility</fullName>
+        <categories>Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>flow_Label_InternalVisbility</shortDescription>
+        <value>Internal Visibility</value>
+    </labels>
+    <labels>
+        <fullName>flow_Label_OtherCountry</fullName>
+        <categories>Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>flow_Label_OtherCountry</shortDescription>
+        <value>Other Country</value>
+    </labels>
+    <labels>
+        <fullName>flow_Label_TaxYear</fullName>
+        <categories>Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>flow_Label_TaxYear</shortDescription>
+        <value>Tax Year</value>
+    </labels>
+    <labels>
+        <fullName>flow_Label_TypeOfFile</fullName>
+        <categories>Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>flow_Label_TypeOfFile</shortDescription>
+        <value>Type of File</value>
+    </labels>
+    <labels>
+        <fullName>flow_Label_UploadFile</fullName>
+        <categories>Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>flow_Label_UploadFile</shortDescription>
+        <value>Upload file(s) below</value>
+    </labels>
+    <labels>
+        <fullName>flow_Text_ClickNextToContinue</fullName>
+        <categories>Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>flow_Text_ClickNextToContinue</shortDescription>
+        <value>Click next to continue</value>
+    </labels>
+    <labels>
+        <fullName>flow_Text_FilesHaveBeenSuccessfullyUploaded</fullName>
+        <categories>Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>flow_Text_FilesHaveBeenSuccessfullyUploaded</shortDescription>
+        <value>files have been successfully uploaded</value>
+    </labels>
+    <labels>
+        <fullName>flow_Text_MaximumLength255</fullName>
+        <categories>Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>flow_Text_MaximumLength255</shortDescription>
+        <value>Maximum length is 255 characters.</value>
+    </labels>
+    <labels>
+        <fullName>flow_Text_NoFilesUploaded</fullName>
+        <categories>Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>flow_Text_NoFilesUploaded</shortDescription>
+        <value>It looks like no files were uploaded. Please click the Back button below to try again.</value>
+    </labels>
+    <labels>
+        <fullName>flow_Text_NoSharedFiles</fullName>
+        <categories>Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>flow_Text_NoSharedFiles</shortDescription>
+        <value>No records found to update.</value>
+    </labels>
+    <labels>
+        <fullName>flow_Text_OfText</fullName>
+        <categories>Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>flow_Text_OfText</shortDescription>
+        <value>of</value>
+    </labels>
+    <labels>
+        <fullName>flow_Text_YouAreAddingFilesTo</fullName>
+        <categories>Flow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>flow_Text_YouAreAddingFilesTo</shortDescription>
+        <value>You are adding files to</value>
+    </labels>
+    <labels>
+        <fullName>supplementInfor_blue</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>supplementInfor_blue</shortDescription>
+        <value>Pay this amount to your employer</value>
+    </labels>
+    <labels>
+        <fullName>supplementInfor_gray</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>supplementInfor_owed</shortDescription>
+        <value>Your employer will pay this amount to you</value>
+    </labels>
+</CustomLabels>

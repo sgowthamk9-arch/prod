@@ -1,0 +1,11 @@
+{
+  "cmsSettings" : { },
+  "currentThemeId" : "91e4d309-5cd7-43f7-8954-1744029ca8f3",
+  "headMarkup" : "<link rel=\"shortcut icon\" href=\"https://andersengm--uat.sandbox.my.site.com/ACXAssignee/favicon.ico\" type=\"image/x-icon\" />\n<style>\n    .cInformationRequestList lightning-primitive-header-actions lightning-button-menu { \n        display: none !important; \n    }\n</style>",
+  "id" : "b23cfbb9-a656-486f-81c0-1ccb6f576a09",
+  "isLockerServiceEnabled" : true,
+  "isRelaxedCSPLevel" : true,
+  "label" : "main",
+  "templateName" : "CPT Community Template",
+  "type" : "appPage"
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Internally_Uploaded__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Identifies when the file linked to a record was internally uploaded. This supports identifying how files should be shared and processes for removal of files from the system.</description>
+    <label>Is Internally Uploaded</label>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

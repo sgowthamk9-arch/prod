@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WorkRecord_VR06_MatchEngagementAssignee</fullName>
+    <active>true</active>
+    <description>The Individual lookup value on a Work Record must be the same value as found on the related Mobile Employee.</description>
+    <errorConditionFormula>NOT(ISBLANK(Individual__c)) &amp;&amp;  Individual__r.Id &lt;&gt; Engagement_Assignee__r.Assignee__r.Id</errorConditionFormula>
+    <errorDisplayField>Individual__c</errorDisplayField>
+    <errorMessage>WorkRecord_VR06: The Individual on a Work Record must be the same value as found on the related Mobile Employee.</errorMessage>
+</ValidationRule>

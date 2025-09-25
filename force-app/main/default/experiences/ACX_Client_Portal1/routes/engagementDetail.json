@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "27104efe-dfc9-4790-b454-6ccc2be15a99",
+  "appPageId" : "009dd51a-6ab1-4381-8505-1a0631cdad2c",
+  "configurationTags" : [ ],
+  "devName" : "Engagement_Detail__c",
+  "id" : "41898a4b-ea58-4c0b-b05f-5a2045dff3ef",
+  "label" : "Engagement Detail",
+  "objectApiName" : "Engagement__c",
+  "routeType" : "detail-a0F",
+  "type" : "route",
+  "urlPrefix" : "engagement"
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Files_Awaiting_Review</fullName>
+    <booleanFilter>(1 OR 3)AND 2</booleanFilter>
+    <columns>NAME</columns>
+    <columns>Due_Date__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Type__c</field>
+        <operation>equals</operation>
+        <value>Review File</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Action Required</value>
+    </filters>
+    <filters>
+        <field>Type__c</field>
+        <operation>equals</operation>
+        <value>Review Tax Return</value>
+    </filters>
+    <label>Files Awaiting Review</label>
+</ListView>

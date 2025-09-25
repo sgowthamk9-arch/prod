@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Andersen Read Only User</label>
+    <permissionSets>Create_and_Edit_Reports_and_Dashboards</permissionSets>
+    <permissionSets>View_Ace_File</permissionSets>
+    <permissionSets>View_Consents</permissionSets>
+    <permissionSets>View_Engagement_Line_Items</permissionSets>
+    <permissionSets>View_Engagements</permissionSets>
+    <permissionSets>View_Information_Requests</permissionSets>
+    <permissionSets>View_Mobile_Employees</permissionSets>
+    <permissionSets>View_Work_Authorizations</permissionSets>
+    <permissionSets>View_Work_Record_Documents</permissionSets>
+    <permissionSets>View_Work_Records</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

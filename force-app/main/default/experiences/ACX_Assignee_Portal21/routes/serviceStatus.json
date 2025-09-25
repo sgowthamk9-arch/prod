@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "8f22caeb-db63-4405-b59a-4ecfa3a0e706",
+  "appPageId" : "b23cfbb9-a656-486f-81c0-1ccb6f576a09",
+  "configurationTags" : [ ],
+  "devName" : "Service_Status__c",
+  "id" : "d64d5cc6-85b0-42a0-9f07-a9ec508068e0",
+  "label" : "Service Status",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-service-status",
+  "type" : "route",
+  "urlPrefix" : "service-status"
+}

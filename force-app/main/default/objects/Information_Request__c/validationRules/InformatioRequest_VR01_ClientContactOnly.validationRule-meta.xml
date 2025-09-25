@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InformatioRequest_VR01_ClientContactOnly</fullName>
+    <active>true</active>
+    <errorConditionFormula>Client_Contact__r.AccountId &lt;&gt;  Work_Record__r.Engagement__r.Client__r.Id
+&amp;&amp;
+TEXT(Assigned_To__c) = &quot;Client&quot;</errorConditionFormula>
+    <errorDisplayField>Client_Contact__c</errorDisplayField>
+    <errorMessage>InformatioRequest_VR01: Client Contact must be from the Client on the related Engagement</errorMessage>
+</ValidationRule>

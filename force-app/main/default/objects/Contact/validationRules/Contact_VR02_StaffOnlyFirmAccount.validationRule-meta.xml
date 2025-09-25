@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_VR02_StaffOnlyFirmAccount</fullName>
+    <active>false</active>
+    <description>JIRA:AGMPB-785</description>
+    <errorConditionFormula>AND(
+     $CustomMetadata.DisableAutomation__mdt.Contact.IsActiveValidationRule__c  = TRUE,
+
+    $RecordType.Name = &quot;Staff&quot;,
+    Account.RecordType.Name &lt;&gt; &quot;Firm&quot;
+)</errorConditionFormula>
+    <errorMessage>Contact_VR02: Staff can only be added to Firm Accounts</errorMessage>
+</ValidationRule>

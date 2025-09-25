@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Information_Request_Name_Formula__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE
+(Type__c,
+&quot;Document&quot;,&quot;Review Document&quot;,
+&quot;Information&quot;,&quot;Provide Information&quot;,
+&quot;Review Tax Return&quot;,&quot;Review Tax Return&quot;,	
+&quot;Review File&quot;, &quot;Review File&quot;,
+&quot;Upload File&quot;, &quot;Upload File&quot;,
+&quot;Schedule Consultation&quot;, &quot;Schedule Consultation&quot;,
+&quot;Availability&quot;, &quot;Provide Availability&quot;,
+&quot;Review Out of Scope Authorization&quot;, &quot;Review Out of Scope Authorization&quot;,
+&quot;Review Out of Scope Question Response&quot;, &quot;Review Out of Scope Question Response&quot;,
+&quot;Questionnaire&quot;, &quot;Complete Questionnaire&quot;,	
+&quot;Review Equalization&quot;, &quot;Review Equalization&quot;,
+&quot;Equalization Payment&quot;, &quot;Equalization Payment&quot;,
+&quot;Tax Payment&quot;, &quot;Tax Payment&quot;,
+&quot;Please Review&quot;				
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Information Request Name Formula</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

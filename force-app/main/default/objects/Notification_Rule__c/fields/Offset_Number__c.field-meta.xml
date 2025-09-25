@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Offset_Number__c</fullName>
+    <description>If Trigger Type is &quot;Time-Based&quot; the number of time units to offset the notification. Negative numbers are before the</description>
+    <externalId>false</externalId>
+    <label>Offset Number</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

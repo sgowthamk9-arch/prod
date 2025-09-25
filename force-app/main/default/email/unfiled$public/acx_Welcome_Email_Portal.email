@@ -1,0 +1,74 @@
+<messaging:emailTemplate subject="{!SUBSTITUTE(SUBSTITUTE(
+                            IF(CONTAINS(UPPER($Network.Name), 'ASSIGNEE'), 
+                                $Label.acx_Portal_Welcome_Email_Subject,
+                                $Label.acx_Portal_Welcome_Email_CP_Subject
+                            ), '{UserFirstName}', recipient.FirstName), '{UserLastName}', recipient.LastName)}"
+                        recipientType="User" 
+                        relatedToType="Network">
+
+<messaging:htmlEmailBody >
+    <html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <style>
+            body { 
+                margin: 0; 
+                padding: 0; 
+                font-family: Arial, sans-serif; 
+                background-color: #f4f4f4;
+            }
+            .email-container { 
+                max-width: 600px; 
+                margin: 0 auto; 
+                background-color: white;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .content { 
+                padding: 30px 0px 0 0px;
+                background-color: #ffffff; 
+                line-height: 1.6;
+                font-size: 14px;
+            }
+            .title {
+                font-family: Arial, sans-serif;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 32px;
+                letter-spacing: 0;
+                color: #000000;
+                margin-bottom: 20px;
+            }
+            .body-text {
+                font-family: Arial, sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0;
+                color: #000000;
+                margin-bottom: 20px;
+            }
+            .welcome-title {
+                font-family: Arial, sans-serif;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 32px;
+                letter-spacing: 0;
+                color: #000000;
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="email-container">
+            <c:acx_EmailHeader />
+            <c:acx_WelcomeEmailBody recipientFirstName="{!recipient.FirstName}" 
+                recipientLastName="{!recipient.LastName}" 
+                recipientId="{!recipient.Id}" />
+            <c:acx_EmailFooter />
+        </div>
+    </body>
+    </html>
+</messaging:htmlEmailBody>
+
+</messaging:emailTemplate>

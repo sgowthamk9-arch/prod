@@ -1,0 +1,106 @@
+<apex:component controller="acx_PortalEmailsController" access="global">
+    <!-- Attributes to receive recipient information -->
+    <apex:attribute name="recipientFirstName" type="String" description="First name of the recipient"/>
+    <apex:attribute name="recipientLastName" type="String" description="Last name of the recipient"/>
+    <apex:attribute name="recipientId" 
+                    type="Id" 
+                    assignTo="{!assigneeRecordId}" 
+                    description="Id of the recipient"/>
+    
+
+    <apex:variable var="init" value="{!emailData}" rendered="false" />
+
+    <!-- Assignee Portal -->
+     
+    <apex:outputPanel rendered="{!CONTAINS($Network.Name, 'Assignee')}">  
+        <div class="content">
+            <div class="welcome-title">
+                <apex:outputText value="{!SUBSTITUTE(
+                                SUBSTITUTE(
+                                    $Label.acx_Portal_Welcome_Email_Large_Title, 
+                                    '{UserFirstName}', recipientFirstName
+                                ),
+                                '{UserLastName}', recipientLastName
+                            )}" 
+                />
+            </div>
+            <div class="body-text">
+                <apex:outputText value="{!SUBSTITUTE(
+                                SUBSTITUTE(
+                                    SUBSTITUTE(
+                                        $Label.acx_Portal_Welcome_Email_BodyText1,
+                                        '{ClientName}', emailData.clientName
+                                    ),
+                                    '{HostCountry}', emailData.hostCountry
+                                ),
+                                '{BR}', '<br/>'
+                            )}" 
+                    escape="false"/>
+            </div>
+            <c:acx_EmailCTA destinationUrl="{!$Network.NetworkUrlForUserEmails}"
+                            ctaText="{!$Label.acx_Portal_Welcome_Email_CTA}" />
+            <div class="body-text">
+                <apex:outputText value="{!SUBSTITUTE(
+                                SUBSTITUTE(
+                                    SUBSTITUTE(
+                                        $Label.acx_Portal_Welcome_Email_BodyText2,
+                                        '{b}', '<b>'
+                                    ),
+                                    '{/b}', '</b>'
+                                ),
+                                '{BR}', '<br/>'
+                            )}" 
+                    escape="false"/>
+                <br/><br/>
+                <apex:outputText value="{!$Label.acx_Email_Closing_Salutation}" />
+            </div>
+        </div>
+    </apex:outputPanel>
+
+    <!-- Client Portal -->
+
+    <apex:outputPanel rendered="{!CONTAINS($Network.Name, 'Client')}"> 
+        <div class="content">
+            <div class="welcome-title">
+                <apex:outputText value="{!SUBSTITUTE(
+                                SUBSTITUTE(
+                                    $Label.acx_Portal_Welcome_Email_CP_Large_Title, 
+                                    '{UserFirstName}', recipientFirstName
+                                ),
+                                '{UserLastName}', recipientLastName
+                            )}" 
+                />
+            </div>
+            <div class="body-text">
+                <apex:outputText value="{!SUBSTITUTE(
+                                SUBSTITUTE(
+                                    SUBSTITUTE(
+                                        $Label.acx_Portal_Welcome_Email_CP_BodyText1,
+                                        '{ClientName}', emailData.clientName
+                                    ),
+                                    '{HostCountry}', emailData.hostCountry
+                                ),
+                                '{BR}', '<br/>'
+                            )}" 
+                    escape="false"/>
+            </div>
+            <c:acx_EmailCTA destinationUrl="{!$Network.NetworkUrlForUserEmails}"
+                            ctaText="{!$Label.acx_Portal_Welcome_Email_CP_CTA}" />
+            <div class="body-text">
+                <apex:outputText value="{!SUBSTITUTE(
+                                SUBSTITUTE(
+                                    SUBSTITUTE(
+                                        $Label.acx_Portal_Welcome_Email_CP_BodyText2,
+                                        '{b}', '<b>'
+                                    ),
+                                    '{/b}', '</b>'
+                                ),
+                                '{BR}', '<br/>'
+                            )}" 
+                    escape="false"/>
+                <br/><br/>
+                <apex:outputText value="{!$Label.acx_Email_Closing_Salutation}" />
+            </div>
+        </div>
+    </apex:outputPanel>
+</apex:component>

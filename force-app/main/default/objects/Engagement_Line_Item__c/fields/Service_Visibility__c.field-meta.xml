@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Visibility__c</fullName>
+    <label>Service Visibility</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Internal Only</fullName>
+                <default>false</default>
+                <label>Internal Only</label>
+            </value>
+            <value>
+                <fullName>Client Portal</fullName>
+                <default>true</default>
+                <label>Client Portal</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Tax Return</controllingFieldValue>
+            <controllingFieldValue>Consultation</controllingFieldValue>
+            <controllingFieldValue>Certificate of Coverage</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Internal Only</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tax Return</controllingFieldValue>
+            <controllingFieldValue>Consultation</controllingFieldValue>
+            <controllingFieldValue>Certificate of Coverage</controllingFieldValue>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Client Portal</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

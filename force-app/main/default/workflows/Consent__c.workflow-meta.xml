@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>NotifyAdminsOnRejection</fullName>
+        <description>This Email Alert used to send Email when consent Rejected.</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ACX_App_Admins</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/NotifyAdminsOnRejection</template>
+    </alerts>
+</Workflow>

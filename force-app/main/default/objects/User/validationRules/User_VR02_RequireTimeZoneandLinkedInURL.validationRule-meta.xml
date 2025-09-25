@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>User_VR02_RequireTimeZoneandLinkedInURL</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    Profile.Name = &quot;Internal Andersen User&quot;,
+    OR(
+        ISBLANK(LinkedIn_URL__c),
+        ISPICKVAL(TimeZoneSidKey, &quot;&quot;)
+    )
+)</errorConditionFormula>
+    <errorMessage>User_VR02: LinkedIn URL and Time Zone are required fields Please fill these fields</errorMessage>
+</ValidationRule>

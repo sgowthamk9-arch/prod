@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>aceFile_VR01_BlockSameUserReviewStatus</fullName>
+    <active>true</active>
+    <description>The same user who uploaded the file cannot change the status of the Internal Review</description>
+    <errorConditionFormula>AND($CustomMetadata.DisableAutomation__mdt.ace_File.IsActiveValidationRule__c  = True, ISCHANGED(Internal_Review_Status__c),   NOT( ISPICKVAL(Internal_Review_Status__c , &quot;Pending&quot;)) , $User.Id = Uploaded_By__r.Id)</errorConditionFormula>
+    <errorMessage>aceFile_VR01: You cannot change the Internal Review Status of a file that you uploaded. (VR01)</errorMessage>
+</ValidationRule>

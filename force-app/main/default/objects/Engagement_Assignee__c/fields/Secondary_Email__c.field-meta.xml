@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Secondary_Email__c</fullName>
+    <description>This field retrieves the Secondary Email from the Account when the Account allows or shares the Secondary Email with the employee.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+    Assignee__r.Share_Secondary_Email_with_Employer__c ,
+    Assignee__r.PersonContact.Secondary_Email__c ,
+   &quot;Information is not shared&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Secondary Email</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

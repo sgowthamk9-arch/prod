@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_VR02_RequireFirstName</fullName>
+    <active>true</active>
+    <description>Jira: AGMPB-829</description>
+    <errorConditionFormula>AND( 
+     $CustomMetadata.DisableAutomation__mdt.Account.IsActiveValidationRule__c = True, 
+
+$RecordType.Name = &quot;Individual&quot;, ISBLANK( FirstName ) )</errorConditionFormula>
+    <errorDisplayField>FirstName</errorDisplayField>
+    <errorMessage>Account_VR02: The First Name field must be populated</errorMessage>
+</ValidationRule>

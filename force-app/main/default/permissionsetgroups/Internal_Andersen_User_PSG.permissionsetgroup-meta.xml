@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Internal Andersen User PSG</label>
+    <permissionSets>Client_Account_Read_Permission</permissionSets>
+    <permissionSets>Client_Contact_Read_Permission</permissionSets>
+    <permissionSets>Engagement_Read_Permission</permissionSets>
+    <permissionSets>Firm_Accounts_Read_Permission</permissionSets>
+    <permissionSets>Individual_Account_Read_Permission</permissionSets>
+    <permissionSets>InternalUser_ApexClass</permissionSets>
+    <permissionSets>Mobile_Employee_Read_Permission</permissionSets>
+    <permissionSets>SignConsent_Permission</permissionSets>
+    <permissionSets>Staff_Contact_Read_Permission</permissionSets>
+    <permissionSets>aceFile_Manage_Permission</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Engagement_VR01_MSAInvalidDates</fullName>
+    <active>true</active>
+    <description>JIRA:AGMPB-524</description>
+    <errorConditionFormula>AND(
+    NOT(ISBLANK(MSA_Effective_Date__c)), 
+    NOT(ISBLANK(MSA_Expiration_Date__c)),
+    MSA_Expiration_Date__c &lt;= MSA_Effective_Date__c,  
+    MSA_Expiration_Date__c &lt; TODAY()  
+)</errorConditionFormula>
+    <errorDisplayField>MSA_Expiration_Date__c</errorDisplayField>
+    <errorMessage>Engagement_VR01: Please ensure the Expiration Date is after the Effective Date</errorMessage>
+</ValidationRule>

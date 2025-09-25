@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "af826319-ae05-4f06-9d02-f53dd11ce309",
+  "appPageId" : "009dd51a-6ab1-4381-8505-1a0631cdad2c",
+  "configurationTags" : [ ],
+  "devName" : "HeatMap__c",
+  "id" : "035ad64e-ee81-4119-8d53-26d2d20d26a3",
+  "label" : "HeatMap",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-heatmap",
+  "type" : "route",
+  "urlPrefix" : "heatmap"
+}

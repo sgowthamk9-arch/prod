@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "e19168fd-5197-4fd0-9a42-737992713815",
+  "appPageId" : "b23cfbb9-a656-486f-81c0-1ccb6f576a09",
+  "configurationTags" : [ ],
+  "devName" : "Consent_and_Preferences__c",
+  "id" : "56c72b18-ff96-4f46-b394-4f0129ef0456",
+  "label" : "Consent and Preferences",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-consent-and-preferences",
+  "type" : "route",
+  "urlPrefix" : "consent-and-preferences"
+}

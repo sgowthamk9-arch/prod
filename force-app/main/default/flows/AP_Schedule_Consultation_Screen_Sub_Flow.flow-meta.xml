@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <actionCalls>
+        <name>Navigate_to_Home_Page</name>
+        <label>Navigate to Home Page</label>
+        <locationX>176</locationX>
+        <locationY>566</locationY>
+        <actionName>c:NavigateToHomePage</actionName>
+        <actionType>component</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <nameSegment>c:NavigateToHomePage</nameSegment>
+        <offset>0</offset>
+    </actionCalls>
+    <apiVersion>62.0</apiVersion>
+    <dynamicChoiceSets>
+        <name>TimeZonePicklist1</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>TimeZoneSidKey</picklistField>
+        <picklistObject>User</picklistObject>
+    </dynamicChoiceSets>
+    <environments>Default</environments>
+    <interviewLabel>AP - {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>AP - Schedule Consultation Screen Sub-Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <name>Get_Work_Record</name>
+        <label>Get Work Record</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Schedule_Tax_Consultation_Screen</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId.Work_Record__r.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Work_Record__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Information_Request</name>
+        <label>Update Information Request</label>
+        <locationX>176</locationX>
+        <locationY>350</locationY>
+        <connector>
+            <targetReference>Thank_You_For_Submitting_Screen</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>First_Available_Date_Time__c</field>
+            <value>
+                <elementReference>DateTime1</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>First_TimeZone__c</field>
+            <value>
+                <elementReference>TimeZone_1</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Second_Available_Date_Time__c</field>
+            <value>
+                <elementReference>DateTime2</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Second_TimeZone__c</field>
+            <value>
+                <elementReference>TimeZone_2</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status__c</field>
+            <value>
+                <stringValue>Internal Review</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Third_Available_Date_Time__c</field>
+            <value>
+                <elementReference>DateTime3</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Third_TimeZone__c</field>
+            <value>
+                <elementReference>TimeZone_3</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Information_Request__c</object>
+    </recordUpdates>
+    <screens>
+        <name>Schedule_Tax_Consultation_Screen</name>
+        <label>Schedule Tax Consultation Screen</label>
+        <locationX>176</locationX>
+        <locationY>242</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Update_Information_Request</targetReference>
+        </connector>
+        <fields>
+            <name>ScheduleConsultationText</name>
+            <fieldText>&lt;p&gt;&lt;strong style=&quot;font-size: 24px;&quot;&gt;Schedule {!Get_Work_Record.COUNTRY_NAME__c} Tax Consultation&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Please select at least three dates and times that work for a 60 minute call with your {!Get_Work_Record.COUNTRY_NAME__c} Consultant. We will confirm one of your chosen slots for the meeting and send you a calendar invitation to &lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;{!$User.Email}&lt;/span&gt;.The default time zone is your &lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;{!Get_Work_Record.COUNTRY_NAME__c}&lt;/span&gt; Consultant&apos;s current time zone, but please feel free to change it depending on your availability.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Schedule_Tax_Consultation_Screen_Section1</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>Schedule_Tax_Consultation_Screen_Section1_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>DateTime1</name>
+                    <dataType>DateTime</dataType>
+                    <fieldText>Time Slot 1</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                    <validationRule>
+                        <errorMessage>&lt;p&gt;&lt;strong style=&quot;color: rgb(240, 6, 6);&quot;&gt;The date and time you selected is either in the past or within the next 48 hours. Please choose a date and time that is at least 48 hours in the future. And All three time slots (Time Slot 1, Time Slot 2, and Time Slot 3) must be different&lt;/strong&gt;&lt;span style=&quot;color: rgb(240, 6, 6);&quot;&gt; &lt;/span&gt;&lt;/p&gt;</errorMessage>
+                        <formulaExpression>IF(
+    AND(
+        {!DateTime1} &gt;= NOW() + 2, 
+        {!DateTime2} &lt;&gt; {!DateTime1}, 
+        {!DateTime3} &lt;&gt; {!DateTime1}
+    ), 
+    TRUE, 
+    FALSE
+)</formulaExpression>
+                    </validationRule>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>6</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>Schedule_Tax_Consultation_Screen_Section1_Column2</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>TimeZone_1</name>
+                    <choiceReferences>TimeZonePicklist1</choiceReferences>
+                    <dataType>String</dataType>
+                    <defaultValue>
+                        <elementReference>Get_Work_Record.Work_Record_Contact_Timezone_Formula__c</elementReference>
+                    </defaultValue>
+                    <fieldText>Time Zone 1</fieldText>
+                    <fieldType>DropdownBox</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isDisabled>
+                        <booleanValue>false</booleanValue>
+                    </isDisabled>
+                    <isRequired>true</isRequired>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>6</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+        </fields>
+        <fields>
+            <name>Schedule_Tax_Consultation_Screen_Section2</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>Schedule_Tax_Consultation_Screen_Section2_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>DateTime2</name>
+                    <dataType>DateTime</dataType>
+                    <fieldText>Time Slot 2</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                    <validationRule>
+                        <errorMessage>&lt;p&gt;&lt;strong style=&quot;background-color: rgb(255, 255, 255); color: rgb(240, 6, 6);&quot;&gt;The date and time you selected is either in the past or within the next 48 hours. Please choose a date and time that is at least 48 hours in the future. And All three time slots (Time Slot 1, Time Slot 2, and Time Slot 3) must be different&lt;/strong&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(240, 6, 6);&quot;&gt; &lt;/span&gt;&lt;/p&gt;</errorMessage>
+                        <formulaExpression>IF(
+    AND(
+        {!DateTime2} &gt;= NOW() + 2, 
+        {!DateTime2} &lt;&gt; {!DateTime1}, 
+        {!DateTime2} &lt;&gt; {!DateTime3}
+    ), 
+    TRUE, 
+    FALSE
+)</formulaExpression>
+                    </validationRule>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>6</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>Schedule_Tax_Consultation_Screen_Section2_Column2</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>TimeZone_2</name>
+                    <choiceReferences>TimeZonePicklist1</choiceReferences>
+                    <dataType>String</dataType>
+                    <defaultValue>
+                        <elementReference>Get_Work_Record.Work_Record_Contact_Timezone_Formula__c</elementReference>
+                    </defaultValue>
+                    <fieldText>Time Zone 2</fieldText>
+                    <fieldType>DropdownBox</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isDisabled>
+                        <booleanValue>false</booleanValue>
+                    </isDisabled>
+                    <isRequired>true</isRequired>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>6</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+        </fields>
+        <fields>
+            <name>Schedule_Tax_Consultation_Screen_Section3</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>Schedule_Tax_Consultation_Screen_Section3_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>DateTime3</name>
+                    <dataType>DateTime</dataType>
+                    <fieldText>Time Slot 3</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                    <validationRule>
+                        <errorMessage>&lt;p&gt;&lt;strong style=&quot;background-color: rgb(255, 255, 255); color: rgb(240, 6, 6);&quot;&gt;The date and time you selected is either in the past or within the next 48 hours. Please choose a date and time that is at least 48 hours in the future. And All three time slots (Time Slot 1, Time Slot 2, and Time Slot 3) must be different&lt;/strong&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(240, 6, 6);&quot;&gt; &lt;/span&gt;&lt;/p&gt;</errorMessage>
+                        <formulaExpression>IF(
+    AND(
+        {!DateTime3} &gt;= NOW() + 2, 
+        {!DateTime3} &lt;&gt; {!DateTime2}, 
+        {!DateTime3} &lt;&gt; {!DateTime1}
+    ), 
+    TRUE, 
+    FALSE
+)</formulaExpression>
+                    </validationRule>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>6</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>Schedule_Tax_Consultation_Screen_Section3_Column2</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>TimeZone_3</name>
+                    <choiceReferences>TimeZonePicklist1</choiceReferences>
+                    <dataType>String</dataType>
+                    <defaultValue>
+                        <elementReference>Get_Work_Record.Work_Record_Contact_Timezone_Formula__c</elementReference>
+                    </defaultValue>
+                    <fieldText>Time Zone 3</fieldText>
+                    <fieldType>DropdownBox</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isDisabled>
+                        <booleanValue>false</booleanValue>
+                    </isDisabled>
+                    <isRequired>true</isRequired>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>6</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+        </fields>
+        <nextOrFinishButtonLabel>Submit</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Thank_You_For_Submitting_Screen</name>
+        <label>Thank You For Submitting Screen</label>
+        <locationX>176</locationX>
+        <locationY>458</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Navigate_to_Home_Page</targetReference>
+        </connector>
+        <fields>
+            <name>SuccessText</name>
+            <fieldText>&lt;p&gt;&lt;strong style=&quot;font-size: 22px;&quot;&gt;Thank You For Submitting. &lt;/strong&gt;&lt;/p&gt;&lt;p&gt;You will be receiving an invitation shortly via your email.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <nextOrFinishButtonLabel>Exit</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Work_Record</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>recordId</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Information_Request__c</objectType>
+    </variables>
+</Flow>

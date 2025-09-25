@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Recipient_Type__c</fullName>
+    <description>Values: &quot;Record Owner&quot; &quot;Related User&quot; &quot;Specific User&quot; &quot;User Group&quot;, &quot;External Email&quot;.</description>
+    <label>Recipient Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Record Owner</fullName>
+                <default>false</default>
+                <label>Record Owner</label>
+            </value>
+            <value>
+                <fullName>Related User</fullName>
+                <default>false</default>
+                <label>Related User</label>
+            </value>
+            <value>
+                <fullName>Specified User</fullName>
+                <default>false</default>
+                <label>Specified User</label>
+            </value>
+            <value>
+                <fullName>User Group</fullName>
+                <default>false</default>
+                <label>User Group</label>
+            </value>
+            <value>
+                <fullName>External Email</fullName>
+                <default>false</default>
+                <label>External Email</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Work_Record_Name_Formula__c</fullName>
+    <externalId>false</externalId>
+    <formula>TEXT(Year__c) + &quot; &quot;+ COUNTRY_NAME__c + &quot; &quot;+ TEXT(Type__c) +&quot; (&quot;+  Individual__r.FirstName +&quot; &quot;+  Individual__r.LastName +&quot;)&quot;</formula>
+    <label>Work Record Name Formula</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

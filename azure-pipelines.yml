@@ -1,0 +1,38 @@
+trigger:
+  branches:
+    include:
+      - deployment-issue-fixes
+
+pr:
+  autoCancel: "true"
+  branches:
+    include:
+      - deployment-issue-fixes
+  paths:
+    exclude:
+      - README.md
+      - azure-pipeline.yaml
+stages:
+  - stage: TestSalesforceOrg
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/test'))
+    jobs:
+      - job: DeployTestOrg
+        steps:
+          - task: NodeTool@0
+            inputs:
+              versionSpec: '18.x' # Updated to a version compatible with the Salesforce CLI
+              checkLatest: true
+            displayName: 'Install Node.js 18.x'
+
+          - bash: npm install sfdx-cli --global
+            displayName: 'Install Salesforce CLI'
+
+          - bash: sfdx force:config:set restDeploy=false --global
+            displayName: 'Use SOAP API for Deployment'
+
+          - bash: sfdx force:auth:jwt:grant --clientid 3MVG9hYFI5K4tx6SKL0ZqWRbUwPfnRckQsnUGyEiqI2auP_Mr7WrLPb6ojTrH9nP1P9CBZ8GW3NPJZMyQUHIm --jwtkeyfile ./bin/server.key --username gowthams@bossinitech.com.rollsrdev --instanceurl https://andersengm--rollsrdev.sandbox.my.salesforce.com/
+            displayName: 'Authorize the salesforce org'
+
+          - bash: sfdx force:source:deploy -p force-app -u gowthams@bossinitech.com.rollsrdev --dry-run --ignore-conflicts --ignore-warnings --test-level NoTestRun
+            displayName: 'Dry-run Deploy (Validation only) to DeployTestOrg Org'
+              

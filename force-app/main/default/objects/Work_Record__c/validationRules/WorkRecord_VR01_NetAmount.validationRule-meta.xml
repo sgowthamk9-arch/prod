@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WorkRecord_VR01_NetAmount</fullName>
+    <active>true</active>
+    <description>JIRA:AGMPB-312</description>
+    <errorConditionFormula>AND(
+  $CustomMetadata.DisableAutomation__mdt.WorkRecord.IsActiveValidationRule__c = TRUE,
+  OR(
+    AND(
+      NOT(ISBLANK(Net_Amount_in_Pocket__c)),
+      NOT(ISBLANK(Net_Amount_out_of_Pocket__c))
+    ),
+    AND(
+      Net_Amount_in_Pocket__c &lt; 0,
+      NOT(ISBLANK(Net_Amount_in_Pocket__c))
+    ),
+    AND(
+        Net_Amount_out_of_Pocket__c &lt; 0,
+        NOT(ISBLANK(Net_Amount_out_of_Pocket__c))
+    )
+  )
+)</errorConditionFormula>
+    <errorMessage>Please ensure that either &apos;Net Amount in Pocket&apos; or &apos;Net Amount out-of-Pocket&apos; is populated, but not both, and that the value entered is not negative.</errorMessage>
+</ValidationRule>

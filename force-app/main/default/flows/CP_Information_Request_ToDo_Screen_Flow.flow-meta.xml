@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <decisions>
+        <name>What_Action_is_Needed</name>
+        <label>What Action is Needed?</label>
+        <locationX>842</locationX>
+        <locationY>134</locationY>
+        <defaultConnectorLabel>None</defaultConnectorLabel>
+        <rules>
+            <name>Is_Type_Review_Out_of_Scope_Authorization</name>
+            <conditionLogic>(1 OR 2) AND 3</conditionLogic>
+            <conditions>
+                <leftValueReference>recordId.Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Review Out of Scope Authorization</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>recordId.Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Review Out of Scope Question Response</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>recordId.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Action Required</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Type_Review_Out_of_Scope_Question_Response_OR_Review_Out_of_Scope_Authorization</targetReference>
+            </connector>
+            <label>Is Type Review Out of Scope Authorization?</label>
+        </rules>
+        <rules>
+            <name>Information</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>recordId.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Action Required</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>recordId.Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Information</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Work_Record_Management_Subflow</targetReference>
+            </connector>
+            <label>Information</label>
+        </rules>
+        <rules>
+            <name>Review_File</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>recordId.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Action Required</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>recordId.Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Review File</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Review_File_Subflow</targetReference>
+            </connector>
+            <label>Review File</label>
+        </rules>
+        <rules>
+            <name>Review_Equalization</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>recordId.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Action Required</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>recordId.Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Review Equalization</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Tax_Equalization_Review_Subflow</targetReference>
+            </connector>
+            <label>Review Equalization</label>
+        </rules>
+        <rules>
+            <name>Equalization_Payment</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>recordId.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Action Required</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>recordId.Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Equalization Payment</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Tax_Equalization_Payment_Subflow</targetReference>
+            </connector>
+            <label>Equalization Payment</label>
+        </rules>
+        <rules>
+            <name>Tax_Payment</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>recordId.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Action Required</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>recordId.Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Tax Payment</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Tax_Payment_Subflow</targetReference>
+            </connector>
+            <label>Tax Payment</label>
+        </rules>
+    </decisions>
+    <description>JIRA:AGMPB-300,AGMPB-301</description>
+    <environments>Default</environments>
+    <interviewLabel>CP - Information Request ToDo Screen Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>CP - Information Request ToDo Screen Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <start>
+        <locationX>716</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>What_Action_is_Needed</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Review_File_Subflow</name>
+        <label>Review File Subflow</label>
+        <locationX>578</locationX>
+        <locationY>242</locationY>
+        <flowName>AP_Review_File_Screen_Flow</flowName>
+        <inputAssignments>
+            <name>recordId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <subflows>
+        <name>Tax_Equalization_Payment_Subflow</name>
+        <label>Tax Equalization Payment Subflow</label>
+        <locationX>1106</locationX>
+        <locationY>242</locationY>
+        <flowName>CP_Tax_Equalization_Payment_Screen_Flow</flowName>
+        <inputAssignments>
+            <name>recordId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </subflows>
+    <subflows>
+        <name>Tax_Equalization_Review_Subflow</name>
+        <label>Tax Equalization Review Subflow</label>
+        <locationX>842</locationX>
+        <locationY>242</locationY>
+        <flowName>CP_Tax_Equalization_Review_Screen_Flow</flowName>
+        <inputAssignments>
+            <name>recordId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <subflows>
+        <name>Tax_Payment_Subflow</name>
+        <label>Tax Payment Subflow</label>
+        <locationX>1370</locationX>
+        <locationY>242</locationY>
+        <flowName>CP_Tax_Payment_Screen_Flow</flowName>
+        <inputAssignments>
+            <name>recordId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </subflows>
+    <subflows>
+        <name>Type_Review_Out_of_Scope_Question_Response_OR_Review_Out_of_Scope_Authorization</name>
+        <label>Type Review Out of Scope Question Response OR Review Out of Scope Authorization</label>
+        <locationX>50</locationX>
+        <locationY>242</locationY>
+        <flowName>CP_Client_Review_Request_Screen_Flow</flowName>
+        <inputAssignments>
+            <name>recordId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <subflows>
+        <name>Work_Record_Management_Subflow</name>
+        <label>Work Record Management Subflow</label>
+        <locationX>314</locationX>
+        <locationY>242</locationY>
+        <flowName>AP_Work_Record_Management_IR_Screen_Flow</flowName>
+        <inputAssignments>
+            <name>recordId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <variables>
+        <name>recordId</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Information_Request__c</objectType>
+    </variables>
+</Flow>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WorkRecordDocument_VR01_RestStateFields</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+    AND(
+        OR(
+            NOT(ISBLANK(State_Province_Name__c)),
+            NOT(ISBLANK(State_Province_Amount__c))
+        ),
+        NOT(
+            OR(
+                ISPICKVAL(Type__c, &quot;State_Return&quot;),
+                ISPICKVAL(Type__c, &quot;Provincial_Return&quot;)
+            )
+        )
+    ),
+    AND(
+        OR(
+            ISPICKVAL(Type__c, &quot;Provincial_Return&quot;),
+            ISPICKVAL(Type__c, &quot;State_Return&quot;)
+        ),
+        OR(
+            ISBLANK(State_Province_Amount__c ),
+            ISBLANK(State_Province_Name__c )
+        )
+    )
+)</errorConditionFormula>
+    <errorMessage>WorkRecordDocument_VR01: State/Province Name and/or State/Province Amount Must populated on work record documents if type is Provincial Return or State Return.</errorMessage>
+</ValidationRule>

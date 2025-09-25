@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Account__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Partner Account</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <filterItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Firm</value>
+        </filterItems>
+        <filterItems>
+            <field>Account.Firm_Type__c</field>
+            <operation>equals</operation>
+            <value>Member</value>
+        </filterItems>
+        <filterItems>
+            <field>Account.Firm_Type__c</field>
+            <operation>equals</operation>
+            <value>Collaborating</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Accounts (Partner Account)</relationshipLabel>
+    <relationshipName>Account</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

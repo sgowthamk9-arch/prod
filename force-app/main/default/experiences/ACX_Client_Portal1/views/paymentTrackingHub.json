@@ -1,0 +1,71 @@
+{
+  "appPageId" : "009dd51a-6ab1-4381-8505-1a0631cdad2c",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "801e76b1-7b51-430b-b5d2-7bf1fc1a7d46",
+  "label" : "Payment Tracking Hub",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "48a3dc1a-9abd-4487-96c0-d49a0d8b6a59",
+          "columns" : [ {
+            "UUID" : "6d0350d0-c405-4e72-859f-29a00534d2fe",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "48a3dc1a-9abd-4487-96c0-d49a0d8b6a59",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "flowArguments" : "",
+            "flowName" : "CP_Tax_Payment_Screen_Flow"
+          },
+          "componentName" : "forceCommunity:flowCommunity",
+          "id" : "92a57c0c-330b-40ae-adc2-3d92b34e210c",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "6d0350d0-c405-4e72-859f-29a00534d2fe",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "4d3438f5-8a30-4c2a-acb5-82c37d607221",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Payment Tracking Hub"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "cb618098-b3b5-42b4-afe0-5df36fa00336",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "f7cec28d-6bbc-4951-96e1-72f527de2251",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-payment-tracking-hub"
+}

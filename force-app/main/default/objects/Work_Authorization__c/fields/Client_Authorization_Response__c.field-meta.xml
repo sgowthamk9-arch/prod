@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client_Authorization_Response__c</fullName>
+    <description>JIRA:AGMPB-304</description>
+    <label>Client Authorization Response</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pending Request for Clarification</fullName>
+                <default>false</default>
+                <label>Pending Request for Clarification</label>
+            </value>
+            <value>
+                <fullName>Approve</fullName>
+                <default>false</default>
+                <label>Approve</label>
+            </value>
+            <value>
+                <fullName>Deny</fullName>
+                <default>false</default>
+                <label>Deny</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

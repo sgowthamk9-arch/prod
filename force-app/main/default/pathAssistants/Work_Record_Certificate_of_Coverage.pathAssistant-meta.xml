@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Work_Record__c</entityName>
+    <fieldName>Milestone__c</fieldName>
+    <masterLabel>Work Record - Certificate of Coverage</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Milestone__c</fieldNames>
+        <fieldNames>Milestone_for_Client__c</fieldNames>
+        <picklistValueName>Record Created</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Certificate_of_Coverage</recordTypeName>
+</PathAssistant>

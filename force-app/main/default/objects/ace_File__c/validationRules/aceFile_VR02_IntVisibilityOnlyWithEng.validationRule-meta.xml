@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>aceFile_VR02_IntVisibilityOnlyWithEng</fullName>
+    <active>true</active>
+    <description>The &apos;Internal Visibility&apos; can only be specified when a Shared File is linked with an Engagement and only an Engagement. Error Code: VR02_SharedFile</description>
+    <errorConditionFormula>AND(
+$CustomMetadata.DisableAutomation__mdt.ace_File.IsActiveValidationRule__c  = True,
+NOT(ISPICKVAL(Internal_Visibility__c,&apos;&apos;)),
+OR(ISBLANK(Engagement__c),
+   NOT(ISBLANK(Work_Record__c)),
+   NOT(ISBLANK(Individual__c))
+   )
+
+)</errorConditionFormula>
+    <errorMessage>The &apos;Internal Visibility&apos; can only be specified when a Shared File is linked with an Engagement and only an Engagement. Error Code: VR02_SharedFile</errorMessage>
+</ValidationRule>

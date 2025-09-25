@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>JIRA:AGMPB-249</description>
+    <flowDefinition>CP_Engagement_Assignee_Upload_FIle_Screen_Flow</flowDefinition>
+    <label>Upload Document</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

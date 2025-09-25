@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>ANDSOW1GM-926</description>
+    <flowDefinition>ConsentForm_SCR_CreateConsent</flowDefinition>
+    <label>Create Consent</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

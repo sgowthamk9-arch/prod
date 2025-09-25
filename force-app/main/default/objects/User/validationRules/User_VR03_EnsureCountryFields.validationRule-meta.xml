@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>User_VR03_EnsureCountryFields</fullName>
+    <active>true</active>
+    <description>ADO:AGMPB-790</description>
+    <errorConditionFormula>AND(
+    OR(
+        Profile.Name = &quot;Internal Andersen User&quot;,
+        Profile.Name = &quot;Client Portal&quot;
+    ),
+    OR(
+        ISBLANK(Country),
+        ISBLANK(TEXT(Country_of_Service__c))
+    )
+)</errorConditionFormula>
+    <errorMessage>User_VR03: Users with the &apos;Internal Andersen User&apos; or &apos;Client Portal&apos; profile must have both &apos;Country&apos; and &apos;Country of Service&apos; filled.</errorMessage>
+</ValidationRule>

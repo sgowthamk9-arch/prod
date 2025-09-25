@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <label>Type</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Assigned_To__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Document</fullName>
+                <default>false</default>
+                <label>Document</label>
+            </value>
+            <value>
+                <fullName>Information</fullName>
+                <default>false</default>
+                <label>Information</label>
+            </value>
+            <value>
+                <fullName>Review Tax Return</fullName>
+                <default>false</default>
+                <label>Review Tax Return</label>
+            </value>
+            <value>
+                <fullName>Review File</fullName>
+                <default>false</default>
+                <label>Review File</label>
+            </value>
+            <value>
+                <fullName>Upload File</fullName>
+                <default>false</default>
+                <label>Upload File</label>
+            </value>
+            <value>
+                <fullName>Schedule Consultation</fullName>
+                <default>false</default>
+                <label>Schedule Consultation</label>
+            </value>
+            <value>
+                <fullName>Review Out of Scope Authorization</fullName>
+                <default>false</default>
+                <label>Review Out of Scope Authorization</label>
+            </value>
+            <value>
+                <fullName>Review Out of Scope Question Response</fullName>
+                <default>false</default>
+                <label>Review Out of Scope Question Response</label>
+            </value>
+            <value>
+                <fullName>Questionnaire</fullName>
+                <default>false</default>
+                <label>Questionnaire</label>
+            </value>
+            <value>
+                <fullName>Review Equalization</fullName>
+                <default>false</default>
+                <label>Review Equalization</label>
+            </value>
+            <value>
+                <fullName>Equalization Payment</fullName>
+                <default>false</default>
+                <label>Equalization Payment</label>
+            </value>
+            <value>
+                <fullName>Tax Payment</fullName>
+                <default>false</default>
+                <label>Tax Payment</label>
+            </value>
+            <value>
+                <fullName>Availability</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Availability</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Mobile Employee</controllingFieldValue>
+            <controllingFieldValue>Andersen Office</controllingFieldValue>
+            <controllingFieldValue>Client</controllingFieldValue>
+            <valueName>Information</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mobile Employee</controllingFieldValue>
+            <valueName>Review Tax Return</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mobile Employee</controllingFieldValue>
+            <controllingFieldValue>Andersen Office</controllingFieldValue>
+            <controllingFieldValue>Client</controllingFieldValue>
+            <valueName>Review File</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mobile Employee</controllingFieldValue>
+            <valueName>Schedule Consultation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mobile Employee</controllingFieldValue>
+            <valueName>Questionnaire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Andersen Office</controllingFieldValue>
+            <controllingFieldValue>Client</controllingFieldValue>
+            <valueName>Review Out of Scope Authorization</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Andersen Office</controllingFieldValue>
+            <controllingFieldValue>Client</controllingFieldValue>
+            <valueName>Review Out of Scope Question Response</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Client</controllingFieldValue>
+            <valueName>Review Equalization</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Client</controllingFieldValue>
+            <valueName>Equalization Payment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Client</controllingFieldValue>
+            <valueName>Tax Payment</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DateDeleted__c</fullName>
+    <description>When a file is removed from Salesforce, this field will capture the date and approximate time of deletion.</description>
+    <encryptionScheme>None</encryptionScheme>
+    <inlineHelpText>When was this file removed from Salesforce?</inlineHelpText>
+    <label>Date Deleted</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

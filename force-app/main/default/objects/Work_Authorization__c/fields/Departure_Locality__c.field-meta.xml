@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Departure_Locality__c</fullName>
+    <description>JIRA:AGMPB-642</description>
+    <label>Departure Locality</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Originating_Country__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Locality</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>CAN</controllingFieldValue>
+            <valueName>Canada - Alberta</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CAN</controllingFieldValue>
+            <valueName>Canada - British Columbia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CAN</controllingFieldValue>
+            <valueName>Canada - Manitoba</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CAN</controllingFieldValue>
+            <valueName>Canada - New Brunswick</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CAN</controllingFieldValue>
+            <valueName>Canada - Newfoundland and Labrador</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CAN</controllingFieldValue>
+            <valueName>Canada - Northwest Territories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CAN</controllingFieldValue>
+            <valueName>Canada - Nova Scotia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CAN</controllingFieldValue>
+            <valueName>Canada - Nunavut</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CAN</controllingFieldValue>
+            <valueName>Canada - Ontario</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CAN</controllingFieldValue>
+            <valueName>Canada - Prince Edward Island</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CAN</controllingFieldValue>
+            <valueName>Canada - Quebec</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CAN</controllingFieldValue>
+            <valueName>Canada - Saskatchewan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CAN</controllingFieldValue>
+            <valueName>Canada - Yukon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHE</controllingFieldValue>
+            <valueName>Switzerland - Aargau</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHE</controllingFieldValue>
+            <valueName>Switzerland - Appenzell Ausserrhoden</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHE</controllingFieldValue>
+            <valueName>Switzerland - Appenzell Innerrhoden</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHE</controllingFieldValue>
+            <valueName>Switzerland - Basel-Landschaft</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHE</controllingFieldValue>
+            <valueName>Switzerland - Basel-Stadt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHE</controllingFieldValue>
+            <valueName>Switzerland - Bern</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHE</controllingFieldValue>
+            <valueName>Switzerland - Fribourg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHE</controllingFieldValue>
+            <valueName>Switzerland - Geneva</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHE</controllingFieldValue>
+            <valueName>Switzerland - Glarus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHE</controllingFieldValue>
+            <valueName>Switzerland - Graubünden</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHE</controllingFieldValue>
+            <valueName>Switzerland - Jura</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHE</controllingFieldValue>
+            <valueName>Switzerland - Lucerne</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHE</controllingFieldValue>
+            <valueName>Switzerland - Neuchâtel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHE</controllingFieldValue>
+            <valueName>Switzerland - Nidwalden</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHE</controllingFieldValue>
+            <valueName>Switzerland - Obwalden</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHE</controllingFieldValue>
+            <valueName>Switzerland - Schaffhausen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHE</controllingFieldValue>
+            <valueName>Switzerland - Schwyz</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHE</controllingFieldValue>
+            <valueName>Switzerland - Solothurn</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHE</controllingFieldValue>
+            <valueName>Switzerland - St. Gallen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHE</controllingFieldValue>
+            <valueName>Switzerland - Thurgau</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHE</controllingFieldValue>
+            <valueName>Switzerland - Ticino</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHE</controllingFieldValue>
+            <valueName>Switzerland - Uri</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHE</controllingFieldValue>
+            <valueName>Switzerland - Valais</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHE</controllingFieldValue>
+            <valueName>Switzerland - Vaud</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHE</controllingFieldValue>
+            <valueName>Switzerland - Zug</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHE</controllingFieldValue>
+            <valueName>Switzerland - Zurich</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Alabama</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Alaska</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Arizona</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Arkansas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>California</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Colorado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Connecticut</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Delaware</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Florida</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Georgia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Hawaii</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Idaho</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Illinois</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Indiana</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Iowa</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Kansas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Kentucky</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Louisiana</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Maine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Maryland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Massachusetts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Michigan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Minnesota</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Mississippi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Missouri</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Montana</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Nebraska</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Nevada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>New Hampshire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>New Jersey</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>New Mexico</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>New York</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>New York City</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>North Carolina</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>North Dakota</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Ohio</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Ohio - Akron</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Ohio - Cincinnati</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Ohio - Cleveland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Ohio - Columbus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Ohio - Toledo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Oklahoma</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Oregon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Pennsylvania</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Pennsylvania - Allentown</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Pennsylvania - Erie</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Pennsylvania - Philadelphia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Pennsylvania - Pittsburgh</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Pennsylvania - Reading</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Rhode Island</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>South Carolina</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>South Dakota</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Tennessee</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Texas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Utah</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Vermont</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Virginia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Washington</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>West Virginia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Wisconsin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Wyoming</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,46 @@
+{
+  "appPageId" : "009dd51a-6ab1-4381-8505-1a0631cdad2c",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "af826319-ae05-4f06-9d02-f53dd11ce309",
+  "label" : "HeatMap",
+  "regions" : [ {
+    "id" : "85c4ce6a-b051-487e-9152-f715a72f3336",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:globalMobileUserMap",
+      "id" : "68f6d261-3dc9-49ad-beb4-0b162e022e85",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "055a8fd8-6edc-4375-8654-b68ad12ec04d",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "7f6e2e36-75e4-49cc-93a9-7abf71a0f0a1",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "HeatMap"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "e78513cf-58a4-4c79-a135-8f5387968803",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "47cc28e5-a703-48ce-86aa-8cd906e16e4b",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-heatmap"
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Responsible_Office__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Responsible Office</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>$Source.Engagement__c</field>
+            <operation>equals</operation>
+            <valueField>Subscribed_Offices__c.Engagement__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Subscribed_Offices__c</referenceTo>
+    <relationshipLabel>Work Records</relationshipLabel>
+    <relationshipName>Work_Records</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

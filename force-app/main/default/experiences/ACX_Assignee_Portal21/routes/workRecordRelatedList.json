@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "2ec64de6-6125-468f-8ba8-a3450acd5e77",
+  "appPageId" : "b23cfbb9-a656-486f-81c0-1ccb6f576a09",
+  "configurationTags" : [ ],
+  "devName" : "Work_Record_Related_List__c",
+  "id" : "f31d2d8d-9caf-4014-902d-f54654b91292",
+  "label" : "Work Record Related List",
+  "objectApiName" : "Work_Record__c",
+  "routeType" : "relatedlist-a0P",
+  "type" : "route",
+  "urlPrefix" : "work-record"
+}

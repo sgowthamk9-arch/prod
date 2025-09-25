@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This Permission set Group Used to Give Delete Permission to System Admins.ANDSOW1GM-1679</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Administer System</label>
+    <permissionSets>Accounts_DeleteAccounts</permissionSets>
+    <permissionSets>Accounts_DeleteContacts</permissionSets>
+    <permissionSets>Consents_DeleteConsentForms</permissionSets>
+    <permissionSets>Consents_DeleteConsents</permissionSets>
+    <permissionSets>Engagements_DeleteEngagementParties</permissionSets>
+    <permissionSets>Engagements_DeleteEngagements</permissionSets>
+    <permissionSets>Engagements_DeleteMobileEmployees</permissionSets>
+    <permissionSets>Engagements_DeleteSubscribedOffices</permissionSets>
+    <permissionSets>SharedFiles_DeleteSharedFiles</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>
