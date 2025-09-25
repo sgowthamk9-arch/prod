@@ -9,7 +9,7 @@ pr:
       - azure-pipeline.yaml
 stages:
   - stage: TestSalesforceOrg
-    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/test'))
+    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/thrid'))
     jobs:
       - job: DeployTestOrg
         steps:
